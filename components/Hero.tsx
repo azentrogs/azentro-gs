@@ -8,7 +8,7 @@ import ParticlesBackground from "./ParticlesBackground";
 export default function Hero() {
   
 
-  const [activeInsight, setActiveInsight] = useState<number | null>(null);
+ const [activeInsight, setActiveInsight] = useState(4);
 
   const insights = [
     {
@@ -393,54 +393,81 @@ export default function Hero() {
 
      {/* SECTION 5 — INSIGHTS */}
 
-<section id="perspectives" className="py-20 bg-gray-50">
+{/* SECTION — PERSPECTIVES */}
 
-  <div className="max-w-7xl mx-auto px-6">
+<section id="perspectives" className="py-24 bg-gray-100">
 
-    <div className="text-center mb-14">
-      <h2 className="text-3xl font-semibold mb-4">
-        Perspectives
-      </h2>
+<div className="max-w-7xl mx-auto px-6">
 
-      <p className="text-gray-600 max-w-2xl mx-auto">
-        Perspectives on engineering, technology, and data intelligence shaping the future of modern enterprises.
-      </p>
-    </div>
+<div className="text-center mb-16">
+
+<h2 className="text-3xl font-semibold mb-4">
+Perspectives
+</h2>
+
+<p className="text-gray-600 max-w-2xl mx-auto">
+Thoughts on engineering, digital transformation, and data intelligence shaping modern enterprises.
+</p>
+
+</div>
 
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div className="grid md:grid-cols-2 gap-12 items-center">
 
-      {insights.map((item, index) => (
+{/* LEFT STACK */}
 
-        <div
-          key={index}
-          onClick={() =>
-            setActiveInsight(activeInsight === index ? null : index)
-          }
-          className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition cursor-pointer"
-        >
+<div className="relative h-[280px]">
 
-          <h3 className="text-xl font-semibold mb-3">
-            {item.title}
-          </h3>
+{insights.map((item, index) => (
 
-          <p className="text-gray-600">
-            {item.summary}
-          </p>
+<div
+key={index}
+onClick={() => setActiveInsight(index)}
+className={`
+absolute w-[260px] p-5 rounded-xl text-white cursor-pointer
+transition-all duration-500
+bg-[#4f79bd]
+${activeInsight === index ? "opacity-0 pointer-events-none" : ""}
+`}
+style={{
+top: `${index * 35}px`,
+left: `${index * 15}px`,
+transform: `rotate(${-4 + index}deg)`
+}}
+>
 
-          {activeInsight === index && (
-            <p className="mt-4 text-gray-700 leading-relaxed">
-              {item.content}
-            </p>
-          )}
+<h4 className="font-semibold text-sm">
+{item.title}
+</h4>
 
-        </div>
+</div>
 
-      ))}
+))}
 
-    </div>
+</div>
 
-  </div>
+
+{/* OPENED CARD */}
+
+<div className="bg-[#4f79bd] text-white p-10 rounded-[35px] shadow-xl transition-all duration-500">
+
+<h3 className="text-2xl font-semibold mb-4">
+{insights[activeInsight].title}
+</h3>
+
+<p className="mb-4 text-white/90">
+{insights[activeInsight].summary}
+</p>
+
+<p className="text-white/90 leading-relaxed">
+{insights[activeInsight].content}
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
