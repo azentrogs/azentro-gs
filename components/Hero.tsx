@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
      <>
-    <section className="relative min-h-[90vh] overflow-hidden text-white pt-[28px]">
+    <section className="relative min-h-[95vh] overflow-hidden text-white pt-[28px]">
       {/* Background */}
 
       <Image
@@ -31,7 +31,7 @@ export default function Hero() {
 
       {/* Content */}
 
-      <div className="relative z-30 max-w-7xl mx-auto px-6 md:pl-20 pt-32">
+      <div className="relative z-30 max-w-7xl mx-auto px-6 md:px-10 lg:pl-20 pt-24 md:pt-32">
         <h1 className="leading-tight">
 
   <span className="block text-3xl md:text-[36px] font-light tracking-wide">
