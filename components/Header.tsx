@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
 
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <header className="w-full sticky top-0 left-0 z-50 bg-gray-100 shadow-sm">
@@ -91,42 +92,62 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white shadow-md px-6 py-6 flex flex-col gap-6 font-medium">
+  <div className="md:hidden bg-white shadow-md px-6 py-6 flex flex-col gap-6 font-medium">
 
-          <Link href="/" onClick={() => setOpen(false)}>
-            Launchpad
-          </Link>
+    {!servicesOpen ? (
+      <>
+        <Link href="/" onClick={() => setOpen(false)}>
+          Launchpad
+        </Link>
 
-          <Link href="#about" onClick={() => setOpen(false)}>
-            The Azentro Way
-          </Link>
+        <Link href="#about" onClick={() => setOpen(false)}>
+          The Azentro Way
+        </Link>
 
-          <Link href="#engineering" onClick={() => setOpen(false)}>
-            Engineering Services
-          </Link>
+        <button
+          onClick={() => setServicesOpen(true)}
+          className="text-left"
+        >
+          What We Engineer {" >"}
+        </button>
 
-          <Link href="#technology" onClick={() => setOpen(false)}>
-            Technology Services
-          </Link>
+        <Link href="#impact" onClick={() => setOpen(false)}>
+          Our Impact
+        </Link>
 
-          <Link href="#data-ai" onClick={() => setOpen(false)}>
-            Data & AI Intelligence
-          </Link>
+        <Link href="#contact" onClick={() => setOpen(false)}>
+          Let's Build
+        </Link>
+      </>
+    ) : (
+      <>
+        <button
+          onClick={() => setServicesOpen(false)}
+          className="text-left font-semibold"
+        >
+          ← Back
+        </button>
 
-          <Link href="#digital" onClick={() => setOpen(false)}>
-            Digital Transformation
-          </Link>
+        <Link href="#engineering" onClick={() => setOpen(false)}>
+          Engineering Services
+        </Link>
 
-          <Link href="#impact" onClick={() => setOpen(false)}>
-            Our Impact
-          </Link>
+        <Link href="#technology" onClick={() => setOpen(false)}>
+          Technology Services
+        </Link>
 
-          <Link href="#contact" onClick={() => setOpen(false)}>
-            Let's Build
-          </Link>
+        <Link href="#data-ai" onClick={() => setOpen(false)}>
+          Data & AI Intelligence
+        </Link>
 
-        </div>
-      )}
+        <Link href="#digital" onClick={() => setOpen(false)}>
+          Digital Transformation
+        </Link>
+      </>
+    )}
+
+  </div>
+)}
 
     </header>
   );
