@@ -394,13 +394,13 @@ export default function Hero() {
 
 {/* SECTION — PERSPECTIVES */}
 
-<section id="perspectives" className="py-24 bg-white">
+<section id="perspectives" className="py-24 bg-[#004373]">
 
 <div className="max-w-7xl mx-auto px-6">
 
 <div className="text-center mb-16">
 
-<h2 className="text-3xl font-semibold mb-4 text-red-500">
+<h2 className="text-3xl font-semibold mb-4 text-white">
 Perspectives Updated
 </h2>
 
@@ -446,7 +446,7 @@ ${activeInsight === index
 
 {/* RIGHT CONTENT */}
 
-<div className="bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-200">
+<div className="bg-[#287BAE] p-10 rounded-xl shadow-sm border border-gray-200">
 
 <h3 className="text-2xl font-semibold mb-4">
 {insights[activeInsight].title}
