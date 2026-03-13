@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
      <>
-    <section className="relative h-[95vh] overflow-hidden text-white pt-[28px]">
+    <section className="relative min-h-[90vh] overflow-hidden text-white pt-[28px]">
       {/* Background */}
 
       <Image
@@ -31,18 +31,18 @@ export default function Hero() {
 
       {/* Content */}
 
-      <div className="relative z-30 max-w-7xl mx-auto pl-20 pr-6 pt-32">
+      <div className="relative z-30 max-w-7xl mx-auto px-6 md:pl-20 pt-32">
         <h1 className="leading-tight">
 
-  <span className="block text-[36px] font-light tracking-wide">
+  <span className="block text-3xl md:text-[36px] font-light tracking-wide">
     ENGINEERING
   </span>
 
-  <span className="block text-[48px] font-bold text-[#cc8146] leading-[1.1]">
+  <span className="block text-4xl md:text-[48px] font-bold text-[#cc8146] leading-[1.1]">
     INTELLIGENT
   </span>
 
-  <span className="block text-[40px] font-semibold tracking-wide">
+  <span className="block text-3xl md:text-[40px] font-semibold tracking-wide">
     DIGITAL FUTURES
   </span>
 
@@ -57,7 +57,7 @@ export default function Hero() {
 
         {/* Buttons */}
 
-        <div className="mt-10 flex gap-6">
+        <div className="mt-10 flex flex-col sm:flex-row gap-6">
 
           <Link href="/contact">
             <button className="flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 shadow-lg hover:scale-105 transition">
