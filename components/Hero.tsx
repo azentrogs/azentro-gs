@@ -404,7 +404,7 @@ export default function Hero() {
 Perspectives
 </h2>
 
-<p className="text-gray-600 max-w-2xl mx-auto">
+<p className="text-white max-w-2xl mx-auto">
 Thoughts on engineering, digital transformation, and data intelligence shaping modern enterprises.
 </p>
 
@@ -415,7 +415,7 @@ Thoughts on engineering, digital transformation, and data intelligence shaping m
 
 {/* LEFT MENU */}
 
-<div className="border-l-2 border-gray-200">
+<div className="border-l-2 border-white">
 
 {insights.map((item, index) => (
 
@@ -424,8 +424,8 @@ key={index}
 onClick={() => setActiveInsight(index)}
 className={`relative pl-6 py-4 cursor-pointer transition-all duration-300
 ${activeInsight === index
-? "text-[#004373] font-semibold"
-: "text-gray-600 hover:text-[#004373]"}
+? "text-white font-semibold"
+: "text-white hover:text-white"}
 `}
 >
 
@@ -452,11 +452,11 @@ ${activeInsight === index
 {insights[activeInsight].title}
 </h3>
 
-<p className="text-gray-600 mb-6">
+<p className="text-white mb-6">
 {insights[activeInsight].summary}
 </p>
 
-<p className="text-gray-700 leading-relaxed">
+<p className="text-white leading-relaxed">
 {insights[activeInsight].content}
 </p>
 
