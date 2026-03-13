@@ -108,7 +108,7 @@ export default function Header() {
           onClick={() => setServicesOpen(true)}
           className="text-left"
         >
-          What We Engineer {" >"}
+          What We Engineer {"→"}
         </button>
 
         <Link href="#impact" onClick={() => setOpen(false)}>
