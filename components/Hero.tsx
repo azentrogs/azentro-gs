@@ -430,7 +430,7 @@ ${activeInsight === index
 >
 
 {activeInsight === index && (
-<span className="absolute left-[-2px] top-0 h-full w-[4px] bg-[#004373] rounded-r"></span>
+<span className="absolute left-[-2px] top-0 h-full w-[4px] rounded-r"></span>
 )}
 
 <h4 className="text-lg">
