@@ -8,7 +8,7 @@ import ParticlesBackground from "./ParticlesBackground";
 export default function Hero() {
   
 
- const [activeInsight, setActiveInsight] = useState(4);
+ const [activeInsight, setActiveInsight] = useState(0);
 
   const insights = [
     {
@@ -391,11 +391,10 @@ export default function Hero() {
 
 </section>
 
-     {/* SECTION 5 — INSIGHTS */}
 
 {/* SECTION — PERSPECTIVES */}
 
-<section id="perspectives" className="py-24 bg-gray-100">
+<section id="perspectives" className="py-24 bg-white">
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -412,31 +411,29 @@ Thoughts on engineering, digital transformation, and data intelligence shaping m
 </div>
 
 
-<div className="grid md:grid-cols-2 gap-12 items-center">
+<div className="grid md:grid-cols-2 gap-16 items-start">
 
-{/* LEFT STACK */}
+{/* LEFT MENU */}
 
-<div className="relative h-[280px]">
+<div className="border-l-2 border-gray-200">
 
 {insights.map((item, index) => (
 
 <div
 key={index}
 onClick={() => setActiveInsight(index)}
-className={`
-absolute w-[260px] p-5 rounded-xl text-white cursor-pointer
-transition-all duration-500
-bg-[#4f79bd]
-${activeInsight === index ? "opacity-0 pointer-events-none" : ""}
+className={`relative pl-6 py-4 cursor-pointer transition-all duration-300
+${activeInsight === index
+? "text-[#004373] font-semibold"
+: "text-gray-600 hover:text-[#004373]"}
 `}
-style={{
-top: `${index * 35}px`,
-left: `${index * 15}px`,
-transform: `rotate(${-4 + index}deg)`
-}}
 >
 
-<h4 className="font-semibold text-sm">
+{activeInsight === index && (
+<span className="absolute left-[-2px] top-0 h-full w-[4px] bg-[#004373] rounded-r"></span>
+)}
+
+<h4 className="text-lg">
 {item.title}
 </h4>
 
@@ -447,19 +444,19 @@ transform: `rotate(${-4 + index}deg)`
 </div>
 
 
-{/* OPENED CARD */}
+{/* RIGHT CONTENT */}
 
-<div className="bg-[#4f79bd] text-white p-10 rounded-[35px] shadow-xl transition-all duration-500">
+<div className="bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-200">
 
 <h3 className="text-2xl font-semibold mb-4">
 {insights[activeInsight].title}
 </h3>
 
-<p className="mb-4 text-white/90">
+<p className="text-gray-600 mb-6">
 {insights[activeInsight].summary}
 </p>
 
-<p className="text-white/90 leading-relaxed">
+<p className="text-gray-700 leading-relaxed">
 {insights[activeInsight].content}
 </p>
 
@@ -470,7 +467,6 @@ transform: `rotate(${-4 + index}deg)`
 </div>
 
 </section>
-
       {/* SECTION 6 — CALL TO ACTION */}
 
       <section id="contact" className="bg-[#004373] text-white py-20 text-center">
