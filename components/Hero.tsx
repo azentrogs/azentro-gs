@@ -223,11 +223,9 @@ export default function Hero() {
           </h2>
 
           <p className="text-blue-100 mb-10 max-w-2xl mx-auto">
-            Azentro services help organizations transform business challenges 
-            into strategic opportunities.We work closely with leadership teams 
-            to design data-driven strategies, optimize operations, and implement 
-            enterprise solutions that improve performance and efficiency.
-
+            Azentro combines engineering expertise, digital technology,
+            and data intelligence to solve complex business and
+            infrastructure challenges.
           </p>
 
           <div className="grid md:grid-cols-4 gap-8">
@@ -235,14 +233,14 @@ export default function Hero() {
             <Link href="/services/strategy" className="p-6 rounded-lg">
             <Image
   src="/icons/strategy.png"
-  alt="Data & AI"
+  alt="Strategy"
   width={60}
   height={60}
   className="mx-auto mb-4"
 />
-              <h3 className="text-xl font-semibold mb-2">Data & AI</h3>
+              <h3 className="text-xl font-semibold mb-2">Business Strategy</h3>
               <p className="text-blue-100 text-sm">
-                Business intelligence, analytics, and machine learning solutions.
+               Business analysis, process optimization, strategic advisory, modernization and enterprise consulting services.
               </p>
             </Link>
 
@@ -270,7 +268,7 @@ export default function Hero() {
 />
               <h3 className="text-xl font-semibold mb-2">Technology</h3>
               <p className="text-blue-100 text-sm">
-                Enterprise applications, cloud engineering, and software development.
+                Software development, web and mobile applications, UI/UX design, DevOps, and cybersecurity solutions.
               </p>
             </Link>
 
@@ -284,7 +282,7 @@ export default function Hero() {
 />
               <h3 className="text-xl font-semibold mb-2">Digital Transformation</h3>
               <p className="text-blue-100 text-sm">
-                Process automation, modernization, and digital strategy.
+                Cloud computing, data engineering, analytics, Process automation, and AI-driven enterprise solutions.
               </p>
             </Link>
 
