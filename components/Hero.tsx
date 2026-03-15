@@ -471,97 +471,119 @@ ${activeInsight === index
 
 <section id="contact" className="bg-[#004373] text-white py-20">
 
-  <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6 text-center">
 
     {/* Title */}
 
-    <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+      Let's Build the Future Together
+    </h2>
 
-      <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-        Let's Build the Future Together
-      </h2>
+    <p className="max-w-2xl mx-auto text-blue-100 mb-8">
+      Partner with Azentro to deliver engineering excellence,
+      digital transformation, and intelligent technology solutions.
+    </p>
 
-      <p className="max-w-2xl mx-auto text-blue-100">
-        Partner with Azentro to deliver engineering excellence,
-        digital transformation, and intelligent technology solutions.
-      </p>
+    {/* CTA Button */}
 
-      {/* CTA BUTTON */}
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSd4iAGAITI4CLCD_ddDcsnc1ycEg1d_8EdVEKHJ86kKW4dPNA/viewform"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="bg-white text-[#004373] px-8 py-3 rounded-full font-medium shadow-md hover:scale-105 transition">
+        Discuss Your Project
+      </button>
+    </a>
 
-      <div className="mt-8">
-
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd4iAGAITI4CLCD_ddDcsnc1ycEg1d_8EdVEKHJ86kKW4dPNA/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="bg-white text-[#004373] px-8 py-3 rounded-full font-medium shadow-md hover:scale-105 transition">
-            Discuss Your Project
-          </button>
-        </a>
-
-      </div>
-
-    </div>
+  </div>
 
 
-    {/* CONTACT DETAILS */}
+  {/* Contact Details */}
 
-    <div className="grid md:grid-cols-3 gap-10 text-center md:text-left">
+  <div className="max-w-6xl mx-auto mt-16 px-6">
 
-      {/* Email */}
+    <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start gap-10">
 
-      <div>
-        <h3 className="font-semibold mb-2">Email</h3>
-        <p className="text-blue-100">
-          info@azentrogs.com
-        </p>
-      </div>
+      {/* Address + Email */}
 
-      {/* Address */}
+      <div className="text-left md:ml-12">
 
-      <div>
-        <h3 className="font-semibold mb-2">Head Office</h3>
-        <p className="text-blue-100">
-          Azentro Global Solutions,
-          Engineering & Technology Consulting
-          93, Pillayar Koil Street, Ayapakkam, Chennai-600 077<br/>
-          
-        </p>
-      </div>
+        <div className="flex items-start gap-3 mb-4">
 
-      {/* Social */}
-
-      <div>
-        <h3 className="font-semibold mb-3">Connect With Us</h3>
-
-        <div className="flex justify-center md:justify-start gap-6">
-
-          <a
-            href="https://www.linkedin.com/company/azentro-global-solutions"
-            target="_blank"
-            className="hover:opacity-80"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
           >
-            LinkedIn
-          </a>
+            <path d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z"/>
+            <circle cx="12" cy="11" r="2"/>
+          </svg>
 
-          <a
-            href="https://www.instagram.com/azentrogs"
-            target="_blank"
-            className="hover:opacity-80"
-          >
-            Instagram
-          </a>
-
-          <a
-            href="https://x.com/azentro"
-            target="_blank"
-            className="hover:opacity-80"
-          >
-            X
-          </a>
+          <p className="text-blue-100">
+            Azentro Global Solutions<br/>
+            Engineering & Technology Consulting<br/>
+            93, Pillayar Koil Street<br/>
+            Ayapakkam<br/>
+            Chennai-600 077
+          </p>
 
         </div>
+
+
+        <div className="flex items-center gap-3">
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path d="M4 4h16v16H4z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+
+          <p className="text-blue-100">
+            info@azentrogs.com
+          </p>
+
+        </div>
+
+      </div>
+
+
+      {/* Social Icons */}
+
+      <div className="flex gap-6">
+
+        <a
+          href="https://www.linkedin.com/company/azentro-global-solutions"
+          target="_blank"
+          className="hover:scale-110 transition"
+        >
+          <img src="/icons/linkedin.png" alt="LinkedIn" width="26" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/azentrogs"
+          target="_blank"
+          className="hover:scale-110 transition"
+        >
+          <img src="/icons/instagram.png" alt="Instagram" width="26" />
+        </a>
+
+        <a
+          href="https://x.com/azentro"
+          target="_blank"
+          className="hover:scale-110 transition"
+        >
+          <img src="/icons/x.png" alt="X" width="26" />
+        </a>
 
       </div>
 
