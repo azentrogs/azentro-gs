@@ -22,13 +22,13 @@ export default function Header() {
           <Image
             src="/Azentrogs-Logo.png"
             alt="Azentro"
-            width={260}
-            height={100}
+            width={220}
+            height={80}
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-10 font-medium">
+        <nav className="hidden md:flex items-center gap-8 font-medium">
 
           <Link href="/#launchpad" className="hover:text-blue-300 transition-colors duration-300">Launchpad</Link>
           <Link href="/#about" className="hover:text-blue-300 transition-colors duration-300">
@@ -77,7 +77,7 @@ Digital Transformation
 
         {/* Desktop CTA */}
         <Link href="/#contact" className="hidden md:block">
-          <button className="border px-5 py-2 rounded hover:bg-gray-200">
+          <button className="border px-4 py-2 rounded hover:bg-gray-200">
             Let's Build
           </button>
         </Link>

@@ -656,9 +656,17 @@ contact@azentrogs.com
 {/* SOCIAL ICONS */}
 <div className="flex gap-6 mt-6">
 
-<a href="#"><Image src="/icons/linkedin.png" width={40} height={40} alt="LinkedIn"/></a>
-<a href="#"><Image src="/icons/instagram.png" width={40} height={40} alt="Instagram"/></a>
-<a href="#"><Image src="/icons/x.png" width={40} height={40} alt="X"/></a>
+<a href="https://www.linkedin.com/company/azentro-global-solutions" target="_blank" rel="noopener noreferrer">
+  <Image src="/icons/linkedin.png" width={40} height={40} alt="LinkedIn" />
+</a>
+
+<a href="https://www.instagram.com/azentrogs" target="_blank" rel="noopener noreferrer">
+  <Image src="/icons/instagram.png" width={40} height={40} alt="Instagram" />
+</a>
+
+<a href="https://x.com/azentrogs" target="_blank" rel="noopener noreferrer">
+  <Image src="/icons/x.png" width={40} height={40} alt="X" />
+</a>
 
 </div>
 
