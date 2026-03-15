@@ -141,12 +141,12 @@ export default function Hero() {
 
     {/* Vision */}
 
-    <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
+    <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
 
       <div>
 
         <h3 className="text-2xl font-semibold mb-4">
-          Our Vision
+          Azentro's Vision
         </h3>
 
         <p className="text-gray-600 leading-relaxed">
@@ -165,8 +165,8 @@ export default function Hero() {
         <Image
           src="/images/vision-outline.png"
           alt="Azentro Vision"
-          width={420}
-          height={320}
+          width={250}
+          height={250}
           className="object-contain"
         />
 
@@ -184,8 +184,8 @@ export default function Hero() {
         <Image
           src="/images/mission-outline.png"
           alt="Azentro Mission"
-          width={420}
-          height={320}
+          width={250}
+          height={250}
           className="object-contain"
         />
 
@@ -195,7 +195,7 @@ export default function Hero() {
       <div className="md:order-2 order-1">
 
         <h3 className="text-2xl font-semibold mb-4">
-          Our Mission
+          Azentro's Mission
         </h3>
 
         <p className="text-gray-600 leading-relaxed">
@@ -293,7 +293,7 @@ export default function Hero() {
 
       {/* SECTION 4 — WHY AZENTRO */}
 
-<section id="impact" className="bg-gray-100 py-24">
+<section id="impact" className="bg-gray-200 py-24">
 
   <div className="max-w-7xl mx-auto px-6">
 
@@ -467,13 +467,11 @@ ${activeInsight === index
 </div>
 
 </section>
-      {/* SECTION — CONTACT + CTA */}
+     {/* SECTION — CONTACT + CTA */}
 
-<section id="contact" className="bg-[#004373] text-white py-20">
+<section id="contact" className="bg-gray-200 text-white py-20">
 
   <div className="max-w-7xl mx-auto px-6 text-center">
-
-    {/* Title */}
 
     <h2 className="text-3xl md:text-4xl font-semibold mb-4">
       Let's Build the Future Together
@@ -483,8 +481,6 @@ ${activeInsight === index
       Partner with Azentro to deliver engineering excellence,
       digital transformation, and intelligent technology solutions.
     </p>
-
-    {/* CTA Button */}
 
     <a
       href="https://docs.google.com/forms/d/e/1FAIpQLSd4iAGAITI4CLCD_ddDcsnc1ycEg1d_8EdVEKHJ86kKW4dPNA/viewform"
@@ -499,96 +495,52 @@ ${activeInsight === index
   </div>
 
 
-  {/* Contact Details */}
+  {/* Contact Details Row */}
 
-  <div className="max-w-6xl mx-auto mt-16 px-6">
+  <div className="max-w-6xl mx-auto mt-16 px-6 grid md:grid-cols-3 items-center">
 
-    <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start gap-10">
+    {/* Address (Left but slightly shifted) */}
 
-      {/* Address + Email */}
-
-      <div className="text-left md:ml-12">
-
-        <div className="flex items-start gap-3 mb-4">
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z"/>
-            <circle cx="12" cy="11" r="2"/>
-          </svg>
-
-          <p className="text-blue-100">
-            Azentro Global Solutions<br/>
-            Engineering & Technology Consulting<br/>
-            93, Pillayar Koil Street<br/>
-            Ayapakkam<br/>
-            Chennai-600 077
-          </p>
-
-        </div>
+    <div className="text-left md:ml-12 text-blue-100">
+   📍 93, Pillayar Koil Street<br/>
+      Ayapakkam, Chennai-600 077
+    </div>
 
 
-        <div className="flex items-center gap-3">
+    {/* Email (Center) */}
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M4 4h16v16H4z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-
-          <p className="text-blue-100">
-            info@azentrogs.com
-          </p>
-
-        </div>
-
-      </div>
+    <div className="text-center text-blue-100 font-medium">
+      ✉ info@azentrogs.com
+    </div>
 
 
-      {/* Social Icons */}
+    {/* Social Icons (Right) */}
 
-      <div className="flex gap-6 px-40">
+    <div className="flex justify-center md:justify-end gap-6">
 
-        <a
-          href="https://www.linkedin.com/company/azentro-global-solutions"
-          target="_blank"
-          className="hover:scale-110 transition"
-        >
-          <img src="/icons/linkedin.png" alt="LinkedIn" height="50" 
-          width="50" />
-        </a>
+      <a
+        href="https://www.linkedin.com/company/azentro-global-solutions"
+        target="_blank"
+        className="hover:scale-110 transition"
+      >
+        <img src="/icons/linkedin.svg" alt="LinkedIn" height="50" width="50" />
+      </a>
 
-        <a
-          href="https://www.instagram.com/azentrogs"
-          target="_blank"
-          className="hover:scale-110 transition"
-        >
-          <img src="/icons/instagram.png" alt="Instagram" height="50" 
-          width="50" />
-        </a>
+      <a
+        href="https://www.instagram.com/azentrogs"
+        target="_blank"
+        className="hover:scale-110 transition"
+      >
+        <img src="/icons/instagram.svg" alt="Instagram" height="50" width="50" />
+      </a>
 
-        <a
-          href="https://x.com/azentro"
-          target="_blank"
-          className="hover:scale-110 transition"
-        >
-          <img src="/icons/x.png" alt="X" height="50" 
-          width="50" />
-        </a>
-
-      </div>
+      <a
+        href="https://x.com/azentro"
+        target="_blank"
+        className="hover:scale-110 transition"
+      >
+        <img src="/icons/x.svg" alt="X" height="50" width="50" />
+      </a>
 
     </div>
 
