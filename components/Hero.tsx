@@ -121,7 +121,10 @@ export default function Hero() {
     </section>
     {/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="scroll-mt-28 bg-gray-200 py-24">
+<section
+  id="about"
+  className="bg-gray-200 pt-32 -mt-32 py-24"
+>
 
   <div className="max-w-7xl mx-auto px-6">
 
@@ -219,7 +222,10 @@ export default function Hero() {
 </section>
      {/* SECTION 3 — SERVICES OVERVIEW */}
 
-      <section id="services" className="scroll-mt-28 bg-[#004373] text-white py-20">
+      <section
+  id="services"
+  className="bg-[#004373] text-white pt-32 -mt-32 py-20"
+>
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-3xl font-semibold mb-4">
@@ -317,7 +323,10 @@ transition-all duration-300 cursor-pointer">
 
       {/* SECTION 4 — WHY AZENTRO */}
 
-<section id="impact" className="scroll-mt-28 bg-gray-200 py-24">
+<section
+  id="impact"
+  className="bg-gray-200 pt-32 -mt-32 py-24"
+>
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-16">
@@ -393,7 +402,10 @@ transition-all duration-300 cursor-pointer">
 
 {/* SECTION — PERSPECTIVES */}
 
-<section id="perspectives" className="scroll-mt-28 bg-[#004373] text-white py-24">
+<section
+  id="perspectives"
+  className="bg-[#004373] text-white pt-32 -mt-32 py-24"
+>
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -468,7 +480,10 @@ ${activeInsight === index
 
 {/* SECTION — INDUSTRIES */}
 
-<section id="industries" className="bg-gray-200 py-24">
+<section
+  id="industries"
+  className="bg-gray-200 pt-32 -mt-32 py-24"
+>
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -585,8 +600,10 @@ unique operational and technological challenges across diverse sectors.
 
 {/* SECTION — LET'S BUILD */}
 
-    <section id="contact" className="bg-[#004373] text-white py-24">
-
+    <section
+  id="contact"
+  className="bg-[#004373] text-white pt-32 -mt-32 py-24"
+>
 <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
 
 {/* LEFT SIDE — FORM */}
