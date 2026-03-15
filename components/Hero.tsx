@@ -640,10 +640,10 @@ Let's Build Together
 </h2>
 
 <p className="text-blue-100 text-lg leading-relaxed mb-8">
-Azentro operates globally with engineering and technology teams based in 
-<span className="text-white font-semibold">United Arab Emirates</span> 
-and 
-<span className="text-white font-semibold">India</span>. 
+Azentro operates globally with engineering and technology teams based in{" "}
+<span className="text-white font-semibold">United Arab Emirates</span>{" "}
+and{" "}
+<span className="text-white font-semibold">India</span>.{" "}
 Connect with us to discuss your project requirements, consulting needs, or any general enquiry.
 </p>
 
