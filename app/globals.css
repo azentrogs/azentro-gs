@@ -44,9 +44,11 @@ button {
 
 section {
   position: relative;
+}
 
-  /* FIX anchor scrolling with sticky header */
-  scroll-margin-top: 110px;
+/* FIX anchor scroll with sticky header */
+[id] {
+  scroll-margin-top: 120px;
 }
 
 /* Smooth page scroll */

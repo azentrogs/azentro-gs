@@ -121,100 +121,90 @@ export default function Hero() {
     </section>
     {/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="bg-gray-200 py-24">
+<section id="about" className="bg-gray-200 py-16">
 
-  <div className="max-w-7xl mx-auto px-6">
+<div className="max-w-7xl mx-auto px-6">
 
-    {/* Section Title */}
+{/* SECTION TITLE */}
+<div className="text-center max-w-3xl mx-auto mb-12">
 
-    <div className="text-center mb-20">
+<h2 className="text-3xl md:text-4xl font-semibold mb-4">
+The Azentro Way
+</h2>
 
-      <h2 className="text-3xl font-semibold mb-4">
-        The Azentro Way
-      </h2>
+<p className="text-gray-600 text-lg leading-relaxed">
+Engineering intelligence that powers modern enterprises. At Azentro, we combine 
+engineering expertise, digital innovation, and data intelligence to design scalable 
+solutions that help organizations navigate complexity and build resilient digital futures.
+</p>
 
-      <p className="text-gray-600 max-w-2xl mx-auto">
-        Engineering intelligence that powers modern enterprises.
-        At Azentro, we combine engineering expertise, digital innovation,
-        and data intelligence to design scalable solutions that help
-        organizations navigate complexity and build resilient digital futures.
-      </p>
-
-    </div>
+</div>
 
 
-    {/* Vision */}
+{/* VISION */}
+<div className="grid md:grid-cols-2 gap-16 items-center mb-16">
 
-    <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
+<div>
 
-      <div>
+<h3 className="text-2xl font-semibold mb-4">
+Azentro's Vision
+</h3>
 
-        <h3 className="text-2xl font-semibold mb-4">
-          Azentro's Vision
-        </h3>
+<p className="text-gray-600 text-lg leading-relaxed">
+To become a trusted global partner for engineering, technology, and data-driven 
+innovation, enabling organizations to build intelligent digital futures and solve 
+complex challenges through modern engineering solutions.
+</p>
 
-        <p className="text-gray-600 leading-relaxed">
-          To become a trusted global partner for engineering,
-          technology, and data-driven innovation, enabling
-          organizations to build intelligent digital futures
-          and solve complex challenges through modern
-          engineering solutions.
-        </p>
+</div>
 
-      </div>
+<div className="flex justify-center">
 
+<Image
+src="/images/vision.png"
+alt="Vision"
+width={420}
+height={320}
+className="object-contain"
+/>
 
-      <div className="flex justify-center">
+</div>
 
-        <Image
-          src="/images/vision-outline.png"
-          alt="Azentro Vision"
-          width={250}
-          height={250}
-          className="object-contain"
-        />
-
-      </div>
-
-    </div>
+</div>
 
 
-    {/* Mission */}
+{/* MISSION */}
+<div className="grid md:grid-cols-2 gap-16 items-center">
 
-    <div className="grid md:grid-cols-2 gap-16 items-center">
+<div className="flex justify-center md:order-1 order-2">
 
-      <div className="flex justify-center md:order-1 order-2">
+<Image
+src="/images/mission.png"
+alt="Mission"
+width={250}
+height={250}
+className="object-contain"
+/>
 
-        <Image
-          src="/images/mission-outline.png"
-          alt="Azentro Mission"
-          width={250}
-          height={250}
-          className="object-contain"
-        />
+</div>
 
-      </div>
+<div className="md:order-2 order-1">
 
+<h3 className="text-2xl font-semibold mb-4">
+Azentro's Mission
+</h3>
 
-      <div className="md:order-2 order-1">
+<p className="text-gray-600 text-lg leading-relaxed">
+Our mission is to deliver scalable engineering, technology, and data intelligence 
+solutions that empower organizations to innovate, transform operations, and create 
+lasting value in a rapidly evolving digital world.
+</p>
 
-        <h3 className="text-2xl font-semibold mb-4">
-          Azentro's Mission
-        </h3>
+</div>
 
-        <p className="text-gray-600 leading-relaxed">
-          Our mission is to deliver scalable engineering,
-          technology, and data intelligence solutions that
-          empower organizations to innovate, transform
-          operations, and create lasting value in a rapidly
-          evolving digital world.
-        </p>
+</div>
 
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
      {/* SECTION 3 — SERVICES OVERVIEW */}
