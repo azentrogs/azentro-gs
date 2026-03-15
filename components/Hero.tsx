@@ -12,31 +12,31 @@ export default function Hero() {
 
   const insights = [
     {
-      title: "Future of Data-Driven Decision Making",
+      title: "Future of Data-Driven Decision Making ↗",
       summary: "How organizations transform complex data into actionable intelligence.",
       content:
         "Modern enterprises generate massive volumes of data. Advanced analytics and intelligent dashboards enable organizations to predict trends, optimize operations, and make faster strategic decisions."
     },
     {
-      title: "Intelligent Automation",
+      title: "Intelligent Automation ↗",
       summary: "Leveraging automation to streamline operations and improve efficiency.",
       content:
         "Automation technologies reduce manual effort and improve operational reliability. Intelligent automation allows organizations to scale faster while empowering teams to focus on innovation."
     },
     {
-      title: "Scalable Digital Architecture",
+      title: "Scalable Digital Architecture ↗",
       summary: "Designing technology ecosystems that support enterprise growth.",
       content:
         "Scalable digital architectures ensure reliable integrations, secure data flows, and high performance across systems as organizations expand."
     },
     {
-      title: "Engineering Digital Transformation",
+      title: "Engineering Digital Transformation ↗",
       summary: "Building modern systems that drive innovation and agility.",
       content:
         "Digital transformation requires modernizing systems, processes, and data platforms to help organizations adapt faster and innovate continuously."
     },
     {
-      title: "Data to Strategic Intelligence",
+      title: "Data to Strategic Intelligence ↗",
       summary: "Turning raw data into meaningful business insights.",
       content:
         "Combining data engineering, analytics, and visualization technologies enables organizations to convert complex datasets into strategic insights."
@@ -434,17 +434,17 @@ ${activeInsight === index
 
 {/* RIGHT CONTENT */}
 
-<div className="bg-[#287BAE] p-10 rounded-xl shadow-sm border border-gray-200">
+<div className="bg-[#287BAE] p-6 rounded-xl shadow-sm ml-[-10px]">
 
-<h3 className="text-2xl font-semibold mb-4 text-white">
+<h3 className="text-2xl font-semibold mb-3 text-white">
 {insights[activeInsight].title}
 </h3>
 
-<p className="text-blue-100 mb-6">
+<p className="text-blue-200 mb-4">
 {insights[activeInsight].summary}
 </p>
 
-<p className="text-blue-200 leading-relaxed">
+<p className="text-blue-300 leading-relaxed">
 {insights[activeInsight].content}
 </p>
 
