@@ -400,7 +400,7 @@ Thoughts on engineering, digital transformation, and data intelligence shaping m
 </div>
 
 
-<div className="grid md:grid-cols-2 gap-16 items-start">
+<div className="grid md:grid-cols-[0.9fr_1.3fr] gap-16 items-start">
 
 {/* LEFT MENU */}
 
@@ -433,7 +433,7 @@ ${activeInsight === index
 
 {/* RIGHT CONTENT */}
 
-<div className="bg-[#287BAE] pl-5 pr-24 py-10 rounded-xl shadow-sm ml-[-20px]">
+<div className="bg-[#287BAE] p-10 rounded-xl shadow-sm">
 
 <h3 className="text-2xl font-semibold mb-4 text-white">
 {insights[activeInsight].title}
