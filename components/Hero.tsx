@@ -121,12 +121,12 @@ export default function Hero() {
     </section>
     {/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="bg-gray-200 py-20">
+<section id="about" className="bg-gray-200 py-10">
 
 <div className="max-w-7xl mx-auto px-6">
 
 {/* SECTION TITLE */}
-<div className="text-center max-w-3xl mx-auto mb-12">
+<div className="text-center max-w-3xl mx-auto mb-10">
 
 <h2 className="text-3xl md:text-4xl font-semibold mb-4">
 The Azentro Way
@@ -209,7 +209,7 @@ lasting value in a rapidly evolving digital world.
 </section>
      {/* SECTION 3 — SERVICES OVERVIEW */}
 
-   <section id="services" className="bg-[#004373] text-white py-20">
+   <section id="services" className="bg-[#004373] text-white py-10">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-3xl font-semibold mb-4">
@@ -307,10 +307,10 @@ transition-all duration-300 cursor-pointer">
 
       {/* SECTION 4 — WHY AZENTRO */}
 
-<section id="impact" className="bg-gray-200 py-20">
+<section id="impact" className="bg-gray-200 py-10">
   <div className="max-w-7xl mx-auto px-6">
 
-    <div className="text-center mb-16">
+    <div className="text-center mb-10">
 
       <h2 className="text-3xl font-semibold mb-4">
         Why Organizations Choose Azentro
@@ -383,7 +383,7 @@ transition-all duration-300 cursor-pointer">
 
 {/* SECTION — PERSPECTIVES */}
 
-<section id="perspectives" className="bg-[#004373] text-white py-20">
+<section id="perspectives" className="bg-[#004373] text-white py-10">
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -393,7 +393,7 @@ transition-all duration-300 cursor-pointer">
 Perspectives
 </h2>
 
-<p className="text-white max-w-2xl mx-auto">
+<p className="text-white text-[15px] max-w-2xl mx-auto">
 Thoughts on engineering, digital transformation, and data intelligence shaping modern enterprises.
 </p>
 
@@ -458,7 +458,7 @@ ${activeInsight === index
 
 {/* SECTION — INDUSTRIES */}
 
-<section id="industries" className="bg-gray-200 py-24">
+<section id="industries" className="bg-gray-200 py-10">
 
 <div className="max-w-7xl mx-auto px-4">
 
