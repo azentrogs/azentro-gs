@@ -401,7 +401,7 @@ onClick={() => setActiveInsight(index)}
 className={`relative pl-6 py-4 cursor-pointer transition-all duration-300
 ${activeInsight === index
 ? "text-white font-semibold"
-: "text-white hover:text-white"}
+: "text-white hover:text-blue-200 transition-colors duration-300"}
 `}
 >
 
@@ -424,15 +424,15 @@ ${activeInsight === index
 
 <div className="bg-[#287BAE] p-10 rounded-xl shadow-sm border border-gray-200">
 
-<h3 className="text-2xl font-semibold mb-4">
+<h3 className="text-2xl font-semibold mb-4 text-white">
 {insights[activeInsight].title}
 </h3>
 
-<p className="text-white mb-6">
+<p className="text-blue-100 mb-6">
 {insights[activeInsight].summary}
 </p>
 
-<p className="text-white leading-relaxed">
+<p className="text-blue-200 leading-relaxed">
 {insights[activeInsight].content}
 </p>
 
