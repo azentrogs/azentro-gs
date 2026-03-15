@@ -585,28 +585,30 @@ unique operational and technological challenges across diverse sectors.
 General Enquiry
 </h3>
 
-<form className="space-y-4">
+<form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
+
+<input type="hidden" name="access_key" value="752089e9-175f-4158-8eea-b1fec18736ad"/>
 
 <input
 type="text"
 placeholder="Full Name"
-className="w-full border border-gray-300 rounded-lg px-4 py-3"
+className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
 />
 
 <input
 type="email"
 placeholder="Email Address"
-className="w-full border border-gray-300 rounded-lg px-4 py-3"
+className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
 />
 
 <input
 type="tel"
 placeholder="Phone Number"
-className="w-full border border-gray-300 rounded-lg px-4 py-3"
+className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
 />
 
 <textarea
-placeholder="Message / Enquiry"
+placeholder="Message / Enquiry text-[#004373] placeholder:text-[#004373]"
 rows={4}
 className="w-full border border-gray-300 rounded-lg px-4 py-3"
 />
