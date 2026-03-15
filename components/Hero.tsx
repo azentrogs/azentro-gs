@@ -466,6 +466,126 @@ ${activeInsight === index
 </div>
 
 </section>
+
+{/* SECTION — INDUSTRIES */}
+
+<section id="industries" className="bg-gray-200 py-24">
+
+<div className="max-w-7xl mx-auto px-6">
+
+{/* Section Header */}
+<div className="text-center mb-14">
+
+<h2 className="text-3xl md:text-4xl font-semibold text-[#004373] mb-4">
+Industries We Support
+</h2>
+
+<p className="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+Azentro delivers engineering consulting services, enterprise technology solutions, 
+and digital transformation services across multiple industries.
+</p>
+
+</div>
+
+
+{/* Industry Grid */}
+<div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+{/* Engineering */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Engineering & Manufacturing
+</h4>
+<p className="text-gray-600 text-sm">
+Advanced engineering consulting and industrial technology solutions.
+</p>
+</div>
+
+{/* Technology */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Technology & Startups
+</h4>
+<p className="text-gray-600 text-sm">
+Scalable digital platforms and modern software engineering support.
+</p>
+</div>
+
+{/* Finance */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Financial Services & FinTech
+</h4>
+<p className="text-gray-600 text-sm">
+Secure technology solutions and data-driven financial systems.
+</p>
+</div>
+
+{/* Healthcare */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Healthcare
+</h4>
+<p className="text-gray-600 text-sm">
+Technology solutions supporting healthcare operations and services.
+</p>
+</div>
+
+{/* Education */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Education
+</h4>
+<p className="text-gray-600 text-sm">
+Digital platforms and analytics solutions for modern education.
+</p>
+</div>
+
+{/* Retail */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Retail & E-commerce
+</h4>
+<p className="text-gray-600 text-sm">
+Technology solutions that enhance digital commerce and operations.
+</p>
+</div>
+
+{/* Infrastructure */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Infrastructure
+</h4>
+<p className="text-gray-600 text-sm">
+Engineering consulting and digital solutions for infrastructure projects.
+</p>
+</div>
+
+{/* Energy */}
+<div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+<h4 className="text-lg font-semibold text-[#004373] mb-2">
+Energy
+</h4>
+<p className="text-gray-600 text-sm">
+Technology and engineering expertise supporting energy systems.
+</p>
+</div>
+
+</div>
+
+
+{/* Bottom Text */}
+<p className="text-center text-gray-700 mt-14 max-w-4xl mx-auto text-lg leading-relaxed">
+Our cross-industry expertise enables Azentro to develop tailored solutions that address 
+unique operational and technological challenges across diverse sectors.
+</p>
+
+</div>
+
+</section>
+
+{/* SECTION — LET'S BUILD */}
+
     <section id="contact" className="bg-[#004373] text-white py-24">
 
 <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">

@@ -48,19 +48,19 @@ What We Engineer
 
 <div className="absolute hidden group-hover:block bg-[#004373] text-white mt-3 rounded-lg shadow-xl w-56">
 
-<Link href="/services/strategy" className="hover:text-blue-300 transition-colors duration-300">
+<Link href="/services/strategy" className="block px-4 py-3 hover:bg-[#0a507f]">
 Business Strategy
 </Link>
 
-<Link href="/services/engineering" className="hover:text-blue-300 transition-colors duration-300">
+<Link href="/services/engineering" className="block px-4 py-3 hover:bg-[#0a507f]">
 Engineering
 </Link>
 
-<Link href="/services/technology" className="hover:text-blue-300 transition-colors duration-300">
+<Link href="/services/technology" className="block px-4 py-3 hover:bg-[#0a507f]">
 Technology
 </Link>
 
-<Link href="/services/digital-transformation" className="hover:text-blue-300 transition-colors duration-300">
+<Link href="/services/digital-transformation" className="block px-4 py-3 hover:bg-[#0a507f]">
 Digital Transformation
 </Link>
 
@@ -69,8 +69,9 @@ Digital Transformation
 </div>
 
 )}
-          <Link href="/#impact">Why Azentro</Link>
-          <Link href="/#perspectives">Perspectives</Link>
+          <Link href="/#impact" className="hover:text-blue-300 transition-colors duration-300">Why Azentro</Link>
+          <Link href="/#perspectives" className="hover:text-blue-300 transition-colors duration-300">Perspectives</Link>
+          <Link href="/#industries" className="hover:text-blue-300 transition-colors duration-300">Industries We Support</Link>
 
         </nav>
 
