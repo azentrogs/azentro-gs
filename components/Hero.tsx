@@ -434,17 +434,17 @@ ${activeInsight === index
 
 {/* RIGHT CONTENT */}
 
-<div className="bg-[#287BAE] p-6 rounded-xl shadow-sm ml-[-10px]">
+<div className="bg-[#287BAE] pl-5 pr-16 py-10 rounded-xl shadow-sm ml-[-10px]">
 
-<h3 className="text-2xl font-semibold mb-3 text-white">
+<h3 className="text-2xl font-semibold mb-4 text-white">
 {insights[activeInsight].title}
 </h3>
 
-<p className="text-blue-200 mb-4">
+<p className="text-blue-200 mb-6">
 {insights[activeInsight].summary}
 </p>
 
-<p className="text-blue-300 leading-relaxed">
+<p className="text-blue-200 leading-relaxed">
 {insights[activeInsight].content}
 </p>
 
