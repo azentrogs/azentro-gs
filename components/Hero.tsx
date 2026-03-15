@@ -47,7 +47,7 @@ export default function Hero() {
 
   return (
      <>
-    <section id="launchpad" className="relative min-h-[85vh] overflow-hidden text-white pt-[28px]">
+    <section id="launchpad" className="relative min-h-[90vh] overflow-hidden text-white pt-[28px]">
       {/* Background */}
 
       <Image
@@ -121,7 +121,7 @@ export default function Hero() {
     </section>
     {/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="bg-gray-200 py-18">
+<section id="about" className="bg-gray-200 py-20">
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -142,7 +142,7 @@ solutions that help organizations navigate complexity and build resilient digita
 
 
 {/* VISION */}
-<div className="grid md:grid-cols-[1.6fr_0.8fr] gap-10 items-center">
+<div className="grid md:grid-cols-[1.8fr_0.6fr] gap-10 items-center">
 
 <div>
 
@@ -174,12 +174,12 @@ className="object-contain"
 
 
 {/* MISSION */}
-<div className="grid md:grid-cols-[1.6fr_0.8fr] gap-10 items-center">
+<div className="grid md:grid-cols-[0.6fr_1.8fr] gap-10 items-center">
 
 <div className="flex justify-center md:order-1 order-2">
 
 <Image
-src="/images/mission-outline.png"
+src="/images/mission.png"
 alt="Mission"
 width={250}
 height={250}
@@ -460,7 +460,7 @@ ${activeInsight === index
 
 <section id="industries" className="bg-gray-200 py-24">
 
-<div className="max-w-7xl mx-auto px-6">
+<div className="max-w-7xl mx-auto px-4">
 
 {/* Section Header */}
 <div className="text-center mb-14">
