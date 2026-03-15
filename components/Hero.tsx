@@ -47,7 +47,7 @@ export default function Hero() {
 
   return (
      <>
-    <section id="launchpad" className="relative min-h-[90vh] overflow-hidden text-white pt-[28px]">
+    <section id="launchpad" className="relative min-h-[88vh] overflow-hidden text-white pt-[26px]">
       {/* Background */}
 
       <Image
@@ -121,7 +121,7 @@ export default function Hero() {
     </section>
     {/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="bg-gray-200 py-10">
+<section id="about" className="bg-gray-200 py-14">
 
 <div className="max-w-7xl mx-auto px-6">
 
