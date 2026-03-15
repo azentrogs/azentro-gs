@@ -316,21 +316,13 @@ export default function Hero() {
 
       {/* Card 1 */}
 
-      <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition">
+      <div className="bg-[#004373] p-8 rounded-lg shadow-sm hover:shadow-lg transition">
 
-        <Image
-          src="/icons/expertise.png"
-          alt="Engineering Expertise"
-          width={60}
-          height={60}
-          className="mb-6"
-        />
-
-        <h3 className="text-xl font-semibold mb-3">
+        <h3 className="text-xl font-semibold mb-3 text-white">
           Deep Engineering Expertise
         </h3>
 
-        <p className="text-gray-600">
+        <p className="text-white">
           Multidisciplinary engineering capabilities across energy,
           infrastructure, manufacturing, aviation, and technology sectors.
         </p>
@@ -340,21 +332,13 @@ export default function Hero() {
 
       {/* Card 2 */}
 
-      <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition">
+      <div className="bg-[#004373] p-8 rounded-lg shadow-sm hover:shadow-lg transition">
 
-        <Image
-          src="/icons/innovation-tech.png"
-          alt="Technology Innovation"
-          width={60}
-          height={60}
-          className="mb-6"
-        />
-
-        <h3 className="text-xl font-semibold mb-3">
+        <h3 className="text-xl font-semibold mb-3 text-white">
           Technology Innovation
         </h3>
 
-        <p className="text-gray-600">
+        <p className="text-white">
           Modern technology solutions including cloud platforms,
           enterprise applications, and digital transformation initiatives.
         </p>
@@ -364,21 +348,13 @@ export default function Hero() {
 
       {/* Card 3 */}
 
-      <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition">
+      <div className="bg-[#004373] p-8 rounded-lg shadow-sm hover:shadow-lg transition">
 
-        <Image
-          src="/icons/data-intelligence.png"
-          alt="Data Intelligence"
-          width={60}
-          height={60}
-          className="mb-6"
-        />
-
-        <h3 className="text-xl font-semibold mb-3">
+        <h3 className="text-xl font-semibold mb-3 text-white">
           Data & Intelligence
         </h3>
 
-        <p className="text-gray-600">
+        <p className="text-white">
           Advanced analytics, business intelligence, and AI-driven
           insights that empower organizations to make smarter decisions.
         </p>
