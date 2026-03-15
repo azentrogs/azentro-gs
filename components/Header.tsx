@@ -27,16 +27,16 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10 font-medium">
 
-          <Link href="#launchpad">Launchpad</Link>
-          <Link href="#about">The Azentro Way</Link>
-          <Link href="#services">What We Engineer</Link>
-          <Link href="#impact">Why Azentro</Link>
-          <Link href="#perspectives">Perspectives</Link>
+          <Link href="/#launchpad">Launchpad</Link>
+          <Link href="/#about">The Azentro Way</Link>
+          <Link href="/#services">What We Engineer</Link>
+          <Link href="/#impact">Why Azentro</Link>
+          <Link href="/#perspectives">Perspectives</Link>
 
         </nav>
 
         {/* Desktop CTA */}
-        <Link href="#contact" className="hidden md:block">
+        <Link href="/#contact" className="hidden md:block">
           <button className="border px-5 py-2 rounded hover:bg-gray-200">
             Let's Build
           </button>
@@ -56,27 +56,27 @@ export default function Header() {
       {open && (
         <div className="md:hidden bg-white shadow-md px-6 py-6 flex flex-col gap-6 font-medium">
 
-          <Link href="#launchpad" onClick={() => setOpen(false)}>
+          <Link href="/#launchpad" onClick={() => setOpen(false)}>
             Launchpad
           </Link>
 
-          <Link href="#about" onClick={() => setOpen(false)}>
+          <Link href="/#about" onClick={() => setOpen(false)}>
             The Azentro Way
           </Link>
 
-          <Link href="#services" onClick={() => setOpen(false)}>
+          <Link href="/#services" onClick={() => setOpen(false)}>
             What We Engineer
           </Link>
 
-          <Link href="#impact" onClick={() => setOpen(false)}>
+          <Link href="/#impact" onClick={() => setOpen(false)}>
             Why Azentro
           </Link>
 
-          <Link href="#perspectives" onClick={() => setOpen(false)}>
+          <Link href="/#perspectives" onClick={() => setOpen(false)}>
             Perspectives
           </Link>
 
-          <Link href="#contact" onClick={() => setOpen(false)}>
+          <Link href="/#contact" onClick={() => setOpen(false)}>
             Let's Build
           </Link>
 
