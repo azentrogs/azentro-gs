@@ -4,10 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
 
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <header className="w-full sticky top-0 left-0 z-50 bg-gray-100 shadow-sm">
@@ -27,9 +30,45 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10 font-medium">
 
-          <Link href="/#launchpad">Launchpad</Link>
-          <Link href="/#about">The Azentro Way</Link>
-          <Link href="/#services">What We Engineer</Link>
+          <Link href="/#launchpad" className="hover:text-blue-300 transition-colors duration-300">Launchpad</Link>
+          <Link href="/#about" className="hover:text-blue-300 transition-colors duration-300">
+The Azentro Way
+</Link>
+          {isHome ? (
+
+<Link href="/#services">What We Engineer</Link>
+
+) : (
+
+<div className="relative group">
+
+<span className="cursor-pointer">
+What We Engineer
+</span>
+
+<div className="absolute hidden group-hover:block bg-[#004373] text-white mt-3 rounded-lg shadow-xl w-56">
+
+<Link href="/services/strategy" className="hover:text-blue-300 transition-colors duration-300">
+Business Strategy
+</Link>
+
+<Link href="/services/engineering" className="hover:text-blue-300 transition-colors duration-300">
+Engineering
+</Link>
+
+<Link href="/services/technology" className="hover:text-blue-300 transition-colors duration-300">
+Technology
+</Link>
+
+<Link href="/services/digital-transformation" className="hover:text-blue-300 transition-colors duration-300">
+Digital Transformation
+</Link>
+
+</div>
+
+</div>
+
+)}
           <Link href="/#impact">Why Azentro</Link>
           <Link href="/#perspectives">Perspectives</Link>
 

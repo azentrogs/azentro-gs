@@ -230,60 +230,80 @@ export default function Hero() {
 
           <div className="grid md:grid-cols-4 gap-8">
 
-            <Link href="/services/strategy" className="p-6 rounded-lg">
+            <Link href="/services/strategy" className="group p-6 rounded-lg border border-transparent 
+hover:border-blue-300 hover:bg-[#0a507f] 
+transition-all duration-300 cursor-pointer">
             <Image
   src="/icons/strategy.png"
   alt="Strategy"
   width={60}
   height={60}
-  className="mx-auto mb-4"
+  className="mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"
 />
               <h3 className="text-xl font-semibold mb-2">Business Strategy</h3>
               <p className="text-blue-100 text-sm">
                Business analysis, process optimization, strategic advisory, modernization and enterprise consulting services.
               </p>
+              <span className="inline-block mt-4 text-sm font-medium text-blue-200 group-hover:text-white transition-colors">
+               Explore →
+              </span>
             </Link>
 
-            <Link href="/services/engineering" className="p-6 rounded-lg">
+            <Link href="/services/engineering" className="group p-6 rounded-lg border border-transparent 
+hover:border-blue-300 hover:bg-[#0a507f] 
+transition-all duration-300 cursor-pointer">
             <Image
     src="/icons/engineer.png"
     alt="Engineering"
     width={60}
     height={60}
-    className="mx-auto mb-4"
+    className="mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"
   />
               <h3 className="text-xl font-semibold mb-2">Engineering</h3>
               <p className="text-blue-100 text-sm">
                 Design, drafting, analysis, modeling, MTO and project engineering services.
               </p>
+              <span className="inline-block mt-4 text-sm font-medium text-blue-200 group-hover:text-white transition-colors">
+                    Explore →
+              </span>
             </Link>
 
-            <Link href="/services/technology" className="p-6 rounded-lg">
+            <Link href="/services/technology" className="group p-6 rounded-lg border border-transparent 
+hover:border-blue-300 hover:bg-[#0a507f] 
+transition-all duration-300 cursor-pointer">
             <Image
   src="/icons/globaltech.png"
   alt="Technology"
   width={60}
   height={60}
-  className="mx-auto mb-4"
+  className="mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"
 />
               <h3 className="text-xl font-semibold mb-2">Technology</h3>
               <p className="text-blue-100 text-sm">
                 Software development, web and mobile applications, UI/UX design, DevOps, and cybersecurity solutions.
               </p>
+              <span className="inline-block mt-4 text-sm font-medium text-blue-200 group-hover:text-white transition-colors">
+               Explore →
+              </span>
             </Link>
 
-            <Link href="/services/digital-transformation" className="p-6 rounded-lg">
+            <Link href="/services/digital-transformation" className="group p-6 rounded-lg border border-transparent 
+hover:border-blue-300 hover:bg-[#0a507f] 
+transition-all duration-300 cursor-pointer">
             <Image
   src="/icons/digi-trans.png"
   alt="Digital Transformation"
   width={60}
   height={60}
-  className="mx-auto mb-4"
+  className="mx-auto mb-4 transition-transform duration-300 group-hover:scale-110"
 />
               <h3 className="text-xl font-semibold mb-2">Digital Transformation</h3>
               <p className="text-blue-100 text-sm">
                 Cloud computing, data engineering, analytics, Process automation, and AI-driven enterprise solutions.
               </p>
+              <span className="inline-block mt-4 text-sm font-medium text-blue-200 group-hover:text-white transition-colors">
+               Explore →
+              </span>
             </Link>
 
           </div>
@@ -391,8 +411,7 @@ Thoughts on engineering, digital transformation, and data intelligence shaping m
 
 {/* LEFT MENU */}
 
-<div className="border-l-2 border-white">
-
+<div className="border-l-2 border-white ml-8 md:ml-16">
 {insights.map((item, index) => (
 
 <div
