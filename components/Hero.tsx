@@ -591,23 +591,27 @@ General Enquiry
 
 <input
 type="text"
+name="name"
 placeholder="Full Name"
 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
 />
 
 <input
 type="email"
+name="email"
 placeholder="Email Address"
 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
 />
 
 <input
 type="tel"
+name="phone"
 placeholder="Phone Number"
 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
 />
 
 <textarea
+name="message"
 placeholder="Message/Enquiry" 
 rows={4}
 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
