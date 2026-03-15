@@ -37,7 +37,7 @@ items: [
 title: "Technical Documentation",
 description:
 "We prepare detailed engineering documentation including specifications, material take-offs and engineering reports required for project execution.",
-image: "/services/technical-docs.png",
+image: "/services/technical-docs1.png",
 items: [
 "Bill of Materials",
 "Electrical Data Sheets",
