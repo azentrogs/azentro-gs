@@ -106,7 +106,7 @@ className="sticky top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden m
 <Image
   src={section.image}
   alt={section.title}
-  width={800}
+  width={1000}
   height={400}
   className={`rounded-lg w-full h-[200px] md:h-[350px] ${
     index % 2 !== 0 ? "md:order-2" : ""
