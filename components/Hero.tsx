@@ -646,7 +646,7 @@ India: +91 9566184889
 </p>
 
 <p className="text-blue-200">
-contact@azentro.com
+contact@azentrogs.com
 </p>
 
 </div>
