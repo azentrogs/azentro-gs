@@ -383,7 +383,7 @@ transition-all duration-300 cursor-pointer">
 
 {/* SECTION — PERSPECTIVES */}
 
-<section id="perspectives" className="bg-[#004373] text-white py-10">
+<section id="perspectives" className="bg-[#004373] text-white py-18">
 
 <div className="max-w-7xl mx-auto px-6">
 
