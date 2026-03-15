@@ -98,17 +98,21 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-col sm:flex-row gap-6">
 
-          <Link href="/contact">
-            <button className="flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 shadow-lg hover:scale-105 transition">
-              DISCUSS YOUR PROJECT →
-            </button>
-          </Link>
+          <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSd4iAGAITI4CLCD_ddDcsnc1ycEg1d_8EdVEKHJ86kKW4dPNA/viewform"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="bg-[#004373] text-white px-8 py-3 rounded-full font-medium shadow-md hover:scale-105 transition">
+        Discuss Your Project
+      </button>
+    </a>
 
-          <Link href="/services/engineering">
-            <button className="flex items-center gap-3 px-8 py-3 rounded-full border border-white/70 hover:bg-white/10 transition">
-              EXPLORE SERVICES ▶
-            </button>
-          </Link>
+          <Link href="/#contact">
+  <button className="flex items-center gap-3 px-8 py-3 rounded-full border border-white/70 hover:bg-white/10 transition">
+    GET IN TOUCH ▶
+  </button>
+</Link>
 
         </div>
 
@@ -462,84 +466,95 @@ ${activeInsight === index
 </div>
 
 </section>
-     {/* SECTION — CONTACT + CTA */}
+    <section id="contact" className="bg-[#004373] text-white py-24">
 
-<section id="contact" className="bg-gray-200 text-[#004373] py-20">
+<div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
 
-  <div className="max-w-7xl mx-auto px-6 text-center">
+{/* LEFT SIDE — FORM */}
+<div className="bg-white rounded-2xl p-6 shadow-lg">
 
-    <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-      Let's Build the Future Together
-    </h2>
+<h3 className="text-[#004373] text-xl font-semibold mb-4">
+General Enquiry
+</h3>
 
-    <p className="max-w-2xl mx-auto text-[#004373] mb-8">
-      Partner with Azentro to deliver engineering excellence,
-      digital transformation, and intelligent technology solutions.
-    </p>
+<form className="space-y-4">
 
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSd4iAGAITI4CLCD_ddDcsnc1ycEg1d_8EdVEKHJ86kKW4dPNA/viewform"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button className="bg-[#004373] text-white px-8 py-3 rounded-full font-medium shadow-md hover:scale-105 transition">
-        Discuss Your Project
-      </button>
-    </a>
+<input
+type="text"
+placeholder="Full Name"
+className="w-full border border-gray-300 rounded-lg px-4 py-3"
+/>
 
-  </div>
+<input
+type="email"
+placeholder="Email Address"
+className="w-full border border-gray-300 rounded-lg px-4 py-3"
+/>
 
+<input
+type="tel"
+placeholder="Phone Number"
+className="w-full border border-gray-300 rounded-lg px-4 py-3"
+/>
 
-  {/* Contact Details Row */}
+<textarea
+placeholder="Message / Enquiry"
+rows={4}
+className="w-full border border-gray-300 rounded-lg px-4 py-3"
+/>
 
-  <div className="max-w-6xl mx-auto mt-16 px-6 grid md:grid-cols-3 items-center">
+<button className="w-full bg-[#004373] text-white py-3 rounded-lg hover:bg-[#0a507f] transition">
+Submit Enquiry
+</button>
 
-    {/* Address (Left but slightly shifted) */}
+</form>
 
-    <div className="text-left md:ml-12 text-[#004373]">
-   📍 93, Pillayar Koil Street<br/>
-      Ayapakkam, Chennai-600 077
-    </div>
-
-
-    {/* Email (Center) */}
-
-    <div className="text-center text-[#004373] font-medium">
-      ✉ info@azentrogs.com
-    </div>
+</div>
 
 
-    {/* Social Icons (Right) */}
+{/* RIGHT SIDE — CONTENT */}
+<div>
 
-    <div className="flex justify-center md:justify-end gap-12">
+<h2 className="text-3xl md:text-4xl font-semibold mb-6">
+Let's Build Together
+</h2>
 
-      <a
-        href="https://www.linkedin.com/company/azentro-global-solutions"
-        target="_blank"
-        className="hover:scale-110 transition"
-      >
-        <img src="/icons/linkedin.png" alt="LinkedIn" height="50" width="50" />
-      </a>
+<p className="text-blue-100 text-lg leading-relaxed mb-8">
+Azentro operates globally with engineering and technology teams based in 
+<span className="text-white font-semibold">United Arab Emirates</span> 
+and 
+<span className="text-white font-semibold">India</span>. 
+Connect with us to discuss your project requirements, consulting needs, or any general enquiry.
+</p>
 
-      <a
-        href="https://www.instagram.com/azentrogs"
-        target="_blank"
-        className="hover:scale-110 transition"
-      >
-        <img src="/icons/instagram.png" alt="Instagram" height="50" width="50" />
-      </a>
+<div className="space-y-4 text-lg">
 
-      <a
-        href="https://x.com/azentro"
-        target="_blank"
-        className="hover:scale-110 transition"
-      >
-        <img src="/icons/x.png" alt="X" height="50" width="50" />
-      </a>
+<p className="font-semibold text-xl">
+UAE: +971 509073886
+</p>
 
-    </div>
+<p className="font-semibold text-xl">
+India: +91 9566184889
+</p>
 
-  </div>
+<p className="text-blue-200">
+contact@azentro.com
+</p>
+
+</div>
+
+{/* SOCIAL ICONS */}
+<div className="flex gap-6 mt-6">
+
+<a href="#"><Image src="/icons/linkedin.png" width={40} height={40} alt="LinkedIn"/></a>
+<a href="#"><Image src="/icons/instagram.png" width={40} height={40} alt="Instagram"/></a>
+<a href="#"><Image src="/icons/x.png" width={40} height={40} alt="X"/></a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
       </>
