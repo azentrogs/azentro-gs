@@ -22,8 +22,8 @@ export default function Header() {
           <Image
             src="/Azentrogs-Logo.png"
             alt="Azentro"
-            width={220}
-            height={60}
+            width={260}
+            height={100}
           />
         </Link>
 
