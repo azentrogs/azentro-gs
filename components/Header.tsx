@@ -71,7 +71,7 @@ Digital Transformation
 )}
           <Link href="/#impact" className="hover:text-blue-300 transition-colors duration-300">Why Azentro</Link>
           <Link href="/#perspectives" className="hover:text-blue-300 transition-colors duration-300">Perspectives</Link>
-          <Link href="/#industries" className="hover:text-blue-300 transition-colors duration-300">Industries We Support</Link>
+          <Link href="/#industries" className="hover:text-blue-300 transition-colors duration-300">Industries</Link>
 
         </nav>
 
