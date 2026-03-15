@@ -223,12 +223,28 @@ export default function Hero() {
           </h2>
 
           <p className="text-blue-100 mb-10 max-w-2xl mx-auto">
-            Azentro combines engineering expertise, digital technology,
-            and data intelligence to solve complex business and
-            infrastructure challenges.
+            Azentro services help organizations transform business challenges 
+            into strategic opportunities.We work closely with leadership teams 
+            to design data-driven strategies, optimize operations, and implement 
+            enterprise solutions that improve performance and efficiency.
+
           </p>
 
           <div className="grid md:grid-cols-4 gap-8">
+
+            <Link href="/services/strategy" className="p-6 rounded-lg">
+            <Image
+  src="/icons/strategy.png"
+  alt="Data & AI"
+  width={60}
+  height={60}
+  className="mx-auto mb-4"
+/>
+              <h3 className="text-xl font-semibold mb-2">Data & AI</h3>
+              <p className="text-blue-100 text-sm">
+                Business intelligence, analytics, and machine learning solutions.
+              </p>
+            </Link>
 
             <Link href="/services/engineering" className="p-6 rounded-lg">
             <Image
@@ -255,20 +271,6 @@ export default function Hero() {
               <h3 className="text-xl font-semibold mb-2">Technology</h3>
               <p className="text-blue-100 text-sm">
                 Enterprise applications, cloud engineering, and software development.
-              </p>
-            </Link>
-
-            <Link href="/services/data-ai" className="p-6 rounded-lg">
-            <Image
-  src="/icons/data.png"
-  alt="Data & AI"
-  width={60}
-  height={60}
-  className="mx-auto mb-4"
-/>
-              <h3 className="text-xl font-semibold mb-2">Data & AI</h3>
-              <p className="text-blue-100 text-sm">
-                Business intelligence, analytics, and machine learning solutions.
               </p>
             </Link>
 
@@ -523,7 +525,7 @@ ${activeInsight === index
         target="_blank"
         className="hover:scale-110 transition"
       >
-        <img src="/icons/linkedin.svg" alt="LinkedIn" height="50" width="50" />
+        <img src="/icons/linkedin.png" alt="LinkedIn" height="50" width="50" />
       </a>
 
       <a
@@ -531,7 +533,7 @@ ${activeInsight === index
         target="_blank"
         className="hover:scale-110 transition"
       >
-        <img src="/icons/instagram.svg" alt="Instagram" height="50" width="50" />
+        <img src="/icons/instagram.png" alt="Instagram" height="50" width="50" />
       </a>
 
       <a
@@ -539,7 +541,7 @@ ${activeInsight === index
         target="_blank"
         className="hover:scale-110 transition"
       >
-        <img src="/icons/x.svg" alt="X" height="50" width="50" />
+        <img src="/icons/x.png" alt="X" height="50" width="50" />
       </a>
 
     </div>
