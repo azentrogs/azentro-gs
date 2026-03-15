@@ -458,7 +458,7 @@ ${activeInsight === index
 
 {/* SECTION — INDUSTRIES */}
 
-<section id="industries" className="bg-gray-200 py-10">
+<section id="industries" className="bg-gray-200 py-18">
 
 <div className="max-w-7xl mx-auto px-4">
 
