@@ -110,7 +110,7 @@ className="sticky top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden m
   alt={section.title}
   width={700}
   height={400}
-  className={`rounded-lg w-full h-[200px] md:h-[300px] ${
+  className={`rounded-lg w-full h-[200px] md:h-[350px] ${
     index % 2 !== 0 ? "md:order-2" : ""
   } object-contain md:object-cover`}
 />
