@@ -608,9 +608,9 @@ className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] pla
 />
 
 <textarea
-placeholder="Message / Enquiry text-[#004373] placeholder:text-[#004373]"
+placeholder="Message/Enquiry" 
 rows={4}
-className="w-full border border-gray-300 rounded-lg px-4 py-3"
+className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#004373] placeholder:text-[#004373]"
 />
 
 <button className="w-full bg-[#004373] text-white py-3 rounded-lg hover:bg-[#0a507f] transition">
