@@ -400,7 +400,7 @@ Thoughts on engineering, digital transformation, and data intelligence shaping m
 </div>
 
 
-<div className="grid md:grid-cols-[0.9fr_1.3fr] gap-16 items-start">
+<div className="grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
 
 {/* LEFT MENU */}
 
