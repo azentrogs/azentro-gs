@@ -467,24 +467,109 @@ ${activeInsight === index
 </div>
 
 </section>
-      {/* SECTION 6 — CALL TO ACTION */}
+      {/* SECTION — CONTACT + CTA */}
 
-      <section id="contact" className="bg-[#004373] text-white py-20 text-center">
+<section id="contact" className="bg-[#004373] text-white py-20">
 
-        <h2 className="text-3xl font-semibold mb-4">
-          Let's Build the Future Together
-        </h2>
+  <div className="max-w-7xl mx-auto px-6">
 
-        <p className="mb-6">
-          Partner with Azentro to deliver engineering excellence,
-          digital transformation, and intelligent technology solutions.
+    {/* Title */}
+
+    <div className="text-center mb-12">
+
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+        Let's Build the Future Together
+      </h2>
+
+      <p className="max-w-2xl mx-auto text-blue-100">
+        Partner with Azentro to deliver engineering excellence,
+        digital transformation, and intelligent technology solutions.
+      </p>
+
+      {/* CTA BUTTON */}
+
+      <div className="mt-8">
+
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd4iAGAITI4CLCD_ddDcsnc1ycEg1d_8EdVEKHJ86kKW4dPNA/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-white text-[#004373] px-8 py-3 rounded-full font-medium shadow-md hover:scale-105 transition">
+            Discuss Your Project
+          </button>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    {/* CONTACT DETAILS */}
+
+    <div className="grid md:grid-cols-3 gap-10 text-center md:text-left">
+
+      {/* Email */}
+
+      <div>
+        <h3 className="font-semibold mb-2">Email</h3>
+        <p className="text-blue-100">
+          info@azentrogs.com
         </p>
+      </div>
 
-        <button className="bg-white text-[#004373] px-6 py-3 rounded-md">
-          Discuss Your Project
-        </button>
+      {/* Address */}
 
-      </section>
+      <div>
+        <h3 className="font-semibold mb-2">Head Office</h3>
+        <p className="text-blue-100">
+          Azentro Global Solutions,
+          Engineering & Technology Consulting
+          93, Pillayar Koil Street, Ayapakkam, Chennai-600 077<br/>
+          
+        </p>
+      </div>
+
+      {/* Social */}
+
+      <div>
+        <h3 className="font-semibold mb-3">Connect With Us</h3>
+
+        <div className="flex justify-center md:justify-start gap-6">
+
+          <a
+            href="https://www.linkedin.com/company/azentro-global-solutions"
+            target="_blank"
+            className="hover:opacity-80"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://www.instagram.com/azentrogs"
+            target="_blank"
+            className="hover:opacity-80"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="https://x.com/azentro"
+            target="_blank"
+            className="hover:opacity-80"
+          >
+            X
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
       </>
   );
 }
