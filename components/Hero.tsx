@@ -254,7 +254,7 @@ export default function Hero() {
   />
               <h3 className="text-xl font-semibold mb-2">Engineering</h3>
               <p className="text-blue-100 text-sm">
-                Design, analysis, modeling, and project engineering services.
+                Design, drafting, analysis, modeling, MTO and project engineering services.
               </p>
             </Link>
 
@@ -469,7 +469,7 @@ ${activeInsight === index
 </section>
      {/* SECTION — CONTACT + CTA */}
 
-<section id="contact" className="bg-gray-200 text-white py-20">
+<section id="contact" className="bg-gray-200 text-[#004373] py-20">
 
   <div className="max-w-7xl mx-auto px-6 text-center">
 
@@ -477,7 +477,7 @@ ${activeInsight === index
       Let's Build the Future Together
     </h2>
 
-    <p className="max-w-2xl mx-auto text-blue-100 mb-8">
+    <p className="max-w-2xl mx-auto text-[#004373] mb-8">
       Partner with Azentro to deliver engineering excellence,
       digital transformation, and intelligent technology solutions.
     </p>
@@ -487,7 +487,7 @@ ${activeInsight === index
       target="_blank"
       rel="noopener noreferrer"
     >
-      <button className="bg-white text-[#004373] px-8 py-3 rounded-full font-medium shadow-md hover:scale-105 transition">
+      <button className="bg-[#004373] text-white px-8 py-3 rounded-full font-medium shadow-md hover:scale-105 transition">
         Discuss Your Project
       </button>
     </a>
@@ -501,7 +501,7 @@ ${activeInsight === index
 
     {/* Address (Left but slightly shifted) */}
 
-    <div className="text-left md:ml-12 text-blue-100">
+    <div className="text-left md:ml-12 text-[#004373]">
    📍 93, Pillayar Koil Street<br/>
       Ayapakkam, Chennai-600 077
     </div>
@@ -509,7 +509,7 @@ ${activeInsight === index
 
     {/* Email (Center) */}
 
-    <div className="text-center text-blue-100 font-medium">
+    <div className="text-center text-[#004373] font-medium">
       ✉ info@azentrogs.com
     </div>
 
