@@ -1,33 +1,156 @@
+import Image from "next/image";
+
 export default function DigitalTransformation() {
-  return (
-    <div className="bg-[#004373] text-white py-20 px-6">
 
-      <div className="max-w-7xl mx-auto">
+const sections = [
+{
+title: "Cloud Computing Solutions",
+description:
+"We design and implement scalable cloud architectures that enable organizations to modernize infrastructure and accelerate digital innovation.",
+image: "/services/cloud-data.png",
+items: [
+"Cloud Architecture Design",
+"Cloud Migration Strategies",
+"Multi-Cloud & Hybrid Cloud Environments",
+"Cloud Infrastructure Management"
+]
+},
+{
+title: "Data Engineering",
+description:
+"We develop enterprise data pipelines and integration frameworks to enable efficient data processing and analytics.",
+image: "/services/data-engineering.png",
+items: [
+"Data Pipeline Development",
+"Enterprise Data Integration",
+"Real Time Data Processing",
+"ETL & ELT Implementation"
+]
+},
+{
+title: "Data Analytics",
+description:
+"Our analytics platforms provide actionable insights through business intelligence dashboards and predictive analytics models.",
+image: "/services/data-analytics.png",
+items: [
+"Business Intelligence Dashboards",
+"Predictive Analytics",
+"Decision Support Systems",
+"KPI Monitoring Platforms"
+]
+},
+{
+title: "Automation",
+description:
+"We implement automation technologies that streamline operations and reduce manual effort across enterprise workflows.",
+image: "/services/automation.png",
+items: [
+"Robotic Process Automation",
+"Business Workflow Automation",
+"Intelligent Process Automation"
+]
+},
+{
+title: "Artificial Intelligence & Machine Learning",
+description:
+"We develop AI powered systems that enable predictive insights, automation and intelligent decision making.",
+image: "/services/ai-ml.png",
+items: [
+"Predictive Modeling",
+"AI Driven Decision Systems",
+"Natural Language Processing"
+]
+},
+{
+title: "Enterprise System Integration",
+description:
+"We integrate enterprise platforms and digital ecosystems through secure APIs and scalable architecture.",
+image: "/services/system-integration.png",
+items: [
+"API Integration",
+"Enterprise Platform Integration",
+"Digital Ecosystem Development"
+]
+},
+{
+title: "Cyber Security & Risk Management",
+description:
+"We help organizations secure digital infrastructure and protect enterprise data through strong cybersecurity frameworks.",
+image: "/services/security-risk.png",
+items: [
+"Cloud Security Frameworks",
+"Identity & Access Management",
+"Data Protection & Compliance"
+]
+}
+];
 
-        <h1 className="text-4xl font-bold mb-6">
-          Digital Transformation
-        </h1>
+return (
+<>
+<div className="bg-[#004373] text-white">
 
-        <p className="mb-12 text-blue-100 max-w-3xl">
-          Azentro helps organizations redesign business processes
-          and operations through modern digital technologies.
-        </p>
+<div className="max-w-7xl mx-auto py-6 px-6">
 
-        <ul className="grid md:grid-cols-2 gap-y-4 text-sm">
+<h1 className="text-4xl font-bold mb-8 text-center tracking-wide">
+Digital Transformation
+</h1>
 
-          <li>Digital Transformation Strategy</li>
-          <li>Business Process Automation</li>
-          <li>Cloud Infrastructure Modernization</li>
-          <li>Enterprise System Integration</li>
-          <li>Customer Experience Platforms</li>
-          <li>Data-Driven Decision Platforms</li>
-          <li>Workflow Automation</li>
-          <li>Digital Capability Development</li>
+<div className="grid md:grid-cols-2 gap-10">
 
-        </ul>
+{sections.map((section, index) => (
 
-      </div>
+<div
+key={index}
+className="sticky top-6 bg-[#287BAE] p-4 rounded-xl shadow-2xl overflow-hidden"
+>
 
-    </div>
-  );
+<div className="grid grid-cols-1 gap-4">
+
+<h2 className="text-2xl font-semibold">
+{section.title}
+</h2>
+
+<p className="text-blue-100 text-base leading-relaxed">
+{section.description}
+</p>
+
+<div className="mt-2">
+
+<Image
+src={section.image}
+alt={section.title}
+width={900}
+height={400}
+className="rounded-lg w-full object-cover h-[300px]"
+/>
+
+<ul className="grid grid-cols-2 gap-x-8 gap-y-1 text-blue-100 mt-4 text-sm">
+
+{section.items.map((item,i)=>(
+<li key={i} className="flex gap-3">
+
+<span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
+
+{item}
+
+</li>
+))}
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</div>
+</>
+);
 }

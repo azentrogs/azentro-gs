@@ -516,7 +516,7 @@ ${activeInsight === index
 
     {/* Social Icons (Right) */}
 
-    <div className="flex justify-center md:justify-end gap-6">
+    <div className="flex justify-center md:justify-end gap-12">
 
       <a
         href="https://www.linkedin.com/company/azentro-global-solutions"
