@@ -47,7 +47,7 @@ export default function Hero() {
 
   return (
      <>
-    <section id="launchpad" className="relative min-h-[95vh] overflow-hidden text-white pt-[28px]">
+    <section id="launchpad" className="relative min-h-[85vh] overflow-hidden text-white pt-[28px]">
       {/* Background */}
 
       <Image
@@ -121,7 +121,7 @@ export default function Hero() {
     </section>
     {/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="bg-gray-200 py-16">
+<section id="about" className="bg-gray-200 py-18">
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -142,7 +142,7 @@ solutions that help organizations navigate complexity and build resilient digita
 
 
 {/* VISION */}
-<div className="grid md:grid-cols-2 gap-16 items-center mb-16">
+<div className="grid md:grid-cols-[1.6fr_0.8fr] gap-10 items-center">
 
 <div>
 
@@ -161,10 +161,10 @@ complex challenges through modern engineering solutions.
 <div className="flex justify-center">
 
 <Image
-src="/images/vision.png"
+src="/images/vision-outline.png"
 alt="Vision"
-width={420}
-height={320}
+width={250}
+height={250}
 className="object-contain"
 />
 
@@ -174,12 +174,12 @@ className="object-contain"
 
 
 {/* MISSION */}
-<div className="grid md:grid-cols-2 gap-16 items-center">
+<div className="grid md:grid-cols-[1.6fr_0.8fr] gap-10 items-center">
 
 <div className="flex justify-center md:order-1 order-2">
 
 <Image
-src="/images/mission.png"
+src="/images/mission-outline.png"
 alt="Mission"
 width={250}
 height={250}
@@ -307,7 +307,7 @@ transition-all duration-300 cursor-pointer">
 
       {/* SECTION 4 — WHY AZENTRO */}
 
-<section id="impact" className="bg-gray-200 py-24">
+<section id="impact" className="bg-gray-200 py-20">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-16">
@@ -383,7 +383,7 @@ transition-all duration-300 cursor-pointer">
 
 {/* SECTION — PERSPECTIVES */}
 
-<section id="perspectives" className="bg-[#004373] text-white py-24">
+<section id="perspectives" className="bg-[#004373] text-white py-20">
 
 <div className="max-w-7xl mx-auto px-6">
 
