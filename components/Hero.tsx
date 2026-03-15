@@ -209,7 +209,7 @@ lasting value in a rapidly evolving digital world.
 </section>
      {/* SECTION 3 — SERVICES OVERVIEW */}
 
-   <section id="services" className="bg-[#004373] text-white py-16">
+   <section id="services" className="bg-[#004373] text-white py-12">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-3xl font-semibold mb-4">
@@ -307,7 +307,7 @@ transition-all duration-300 cursor-pointer">
 
       {/* SECTION 4 — WHY AZENTRO */}
 
-<section id="impact" className="bg-gray-200 py-18">
+<section id="impact" className="bg-gray-200 py-22">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-12">
@@ -393,7 +393,7 @@ transition-all duration-300 cursor-pointer">
 Perspectives
 </h2>
 
-<p className="text-white text-sm max-w-2xl mx-auto">
+<p className="text-white max-w-3xl mx-auto">
 Thoughts on engineering, digital transformation, and data intelligence shaping modern enterprises.
 </p>
 
