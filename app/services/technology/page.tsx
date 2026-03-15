@@ -92,7 +92,7 @@ Technology Services
 
 <div
 key={index}
-className="sticky top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden"
+className="sticky top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[500px]"
 >
 
 <h2 className="text-2xl font-semibold mb-2">
@@ -103,16 +103,16 @@ className="sticky top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden"
 {section.description}
 </p>
 
-<div className={`grid grid-cols-1 md:grid-cols-2 gap-6 items-center`}>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
 
 <Image
   src={section.image}
   alt={section.title}
   width={700}
   height={400}
-  className={`rounded-lg w-full h-[240px] md:h-[300px] ${
+  className={`rounded-lg w-full h-[200px] md:h-[300px] ${
     index % 2 !== 0 ? "md:order-2" : ""
-  } object-contain md:object-cover bg-white`}
+  } object-contain md:object-cover`}
 />
 
 {section.items.length > 0 && (

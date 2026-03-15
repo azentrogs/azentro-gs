@@ -94,36 +94,39 @@ Engineering Services
 
 <div
 key={index}
-className="sticky top-6 bg-[#287BAE] p-4 rounded-xl shadow-2xl overflow-hidden"
+className="sticky top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[500px]"
 >
 
-<div className="grid grid-cols-1 gap-4">
-
-<h2 className="text-2xl font-semibold">
+<h2 className="text-2xl font-semibold mb-2">
 {section.title}
 </h2>
 
-<p className="text-blue-100 text-base leading-relaxed">
+<p className="text-blue-100 text-base leading-relaxed mb-4">
 {section.description}
 </p>
 
-<div className="mt-2">
+<div className={`grid grid-cols-1 md:grid-cols-2 gap-6 items-center`}>
 
 <Image
   src={section.image}
   alt={section.title}
-  width={900}
+  width={700}
   height={400}
-  className={`rounded-lg w-full object-cover ${
-    section.items.length === 0 ? "h-[400px]" : "h-[300px]"
-  }`}
+  className={`rounded-lg w-full h-[240px] md:h-[300px] ${
+    index % 2 !== 0 ? "md:order-2" : ""
+  } object-contain md:object-cover bg-white`}
 />
 
 {section.items.length > 0 && (
 
-<ul className="grid grid-cols-2 gap-x-8 gap-y-1 text-blue-100 mt-4 text-sm">
+<ul
+className={`grid grid-cols-1 gap-y-2 text-blue-100 text-[15px] md:text-[16px] leading-relaxed ${
+index % 2 !== 0 ? "md:order-1" : ""
+}`}
+>
 
 {section.items.map((item,i)=>(
+
 <li key={i} className="flex gap-3">
 
 <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
@@ -131,13 +134,12 @@ className="sticky top-6 bg-[#287BAE] p-4 rounded-xl shadow-2xl overflow-hidden"
 {item}
 
 </li>
+
 ))}
 
 </ul>
 
 )}
-
-</div>
 
 </div>
 
