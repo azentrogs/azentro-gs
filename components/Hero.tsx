@@ -559,14 +559,15 @@ ${activeInsight === index
 
       {/* Social Icons */}
 
-      <div className="flex gap-6">
+      <div className="flex gap-6 px-40">
 
         <a
           href="https://www.linkedin.com/company/azentro-global-solutions"
           target="_blank"
           className="hover:scale-110 transition"
         >
-          <img src="/icons/linkedin.png" alt="LinkedIn" width="26" />
+          <img src="/icons/linkedin.png" alt="LinkedIn" height="50" 
+          width="50" />
         </a>
 
         <a
@@ -574,7 +575,8 @@ ${activeInsight === index
           target="_blank"
           className="hover:scale-110 transition"
         >
-          <img src="/icons/instagram.png" alt="Instagram" width="26" />
+          <img src="/icons/instagram.png" alt="Instagram" height="50" 
+          width="50" />
         </a>
 
         <a
@@ -582,7 +584,8 @@ ${activeInsight === index
           target="_blank"
           className="hover:scale-110 transition"
         >
-          <img src="/icons/x.png" alt="X" width="26" />
+          <img src="/icons/x.png" alt="X" height="50" 
+          width="50" />
         </a>
 
       </div>
