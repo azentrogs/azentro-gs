@@ -99,7 +99,7 @@ export default function Hero() {
         <div className="mt-10 flex flex-col sm:flex-row gap-6">
 
           <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSd4iAGAITI4CLCD_ddDcsnc1ycEg1d_8EdVEKHJ86kKW4dPNA/viewform"
+      href="https://forms.gle/dEgX1P3LVCSEbTzv9"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -585,7 +585,7 @@ unique operational and technological challenges across diverse sectors.
 General Enquiry
 </h3>
 
-<form action="https://forms.gle/9MGYHn9nHQR7fyio6" method="POST" className="space-y-4">
+<form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
 
 <input type="hidden" name="access_key" value="752089e9-175f-4158-8eea-b1fec18736ad"/>
 
