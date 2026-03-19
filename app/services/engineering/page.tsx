@@ -129,7 +129,7 @@ export default function EngineeringServices() {
               <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-[580px] md:h-[580px]">
 
                 {/* TEXT */}
-                <div className="relative z-10 max-w-[65%] h-full overflow-y-auto pr-2">
+                <div className="relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto pr-2">
                   <h2 className="text-2xl font-semibold mb-2">
                     {section.title}
                   </h2>
@@ -162,7 +162,7 @@ export default function EngineeringServices() {
                 </div>
 
                 {/* IMAGE RIGHT BOTTOM */}
-                <div className="absolute bottom-0 right-0 w-[55%] h-[60%]">
+                <div className="absolute bottom-15 right-0 w-[55%] h-[60%]">
                   <Image
                     src={section.image}
                     alt={section.title}
