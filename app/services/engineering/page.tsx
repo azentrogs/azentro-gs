@@ -126,14 +126,10 @@ export default function EngineeringServices() {
                 zIndex: 20 + index,
                     }}
             >
-              <div className={`relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden ${
-  index === sections.length - 1
-    ? "h-[680px] md:h-[600px]"
-    : "h-[580px] md:h-[600px]"
-}`}>
+              <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-[580px] md:h-[560px]">
                 
                 {/* TEXT */}
-                <div className="relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto pr-2">
+                <div className="relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto md:overflow-y-auto pr-2">
                   <h2 className="text-2xl font-semibold mb-2">
                     {section.title}
                   </h2>
