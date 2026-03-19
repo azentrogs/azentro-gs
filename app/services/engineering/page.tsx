@@ -128,7 +128,7 @@ export default function EngineeringServices() {
             >
               <div className={`relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden ${
   index >= sections.length - 2
-    ? "h-[680px] md:h-[600px]"
+    ? "h-[600px] md:h-[600px]"
     : "h-[580px] md:h-[540px]"
 }`}>
                 
