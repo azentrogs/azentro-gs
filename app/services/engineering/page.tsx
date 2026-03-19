@@ -5,7 +5,7 @@ export default function EngineeringServices() {
     {
       title: "Engineering Designs & Drawings",
       description:
-        "We provide detailed engineering drawings and layouts required for construction, installation and project execution across electrical, instrumentation, piping and process engineering disciplines.",
+        "We provide detailed engineering drawings and layouts required for construction, installation and project execution.",
       image: "/services/design-drawings.png",
       items: [
         "Single Line Diagrams",
@@ -20,7 +20,7 @@ export default function EngineeringServices() {
     {
       title: "Engineering Analysis",
       description:
-        "Our engineering team performs technical calculations and system evaluations to ensure safe, reliable and optimized engineering designs.",
+        "Our engineering team performs technical calculations and system evaluations.",
       image: "/services/engineering.png",
       items: [
         "Earthing Calculations",
@@ -35,7 +35,7 @@ export default function EngineeringServices() {
     {
       title: "Technical Documentation",
       description:
-        "We prepare detailed engineering documentation including specifications, material take-offs and engineering reports required for project execution.",
+        "We prepare detailed engineering documentation required for project execution.",
       image: "/services/technical-docs1.png",
       items: [
         "Bill of Materials",
@@ -50,7 +50,7 @@ export default function EngineeringServices() {
     {
       title: "Modeling & Visualization",
       description:
-        "We develop detailed 3D engineering models and digital visualizations to support design coordination and project planning.",
+        "We develop detailed 3D engineering models and digital visualizations.",
       image: "/services/modeling-visualization.png",
       items: [
         "PDMS / AVEVA E3D Modeling",
@@ -64,21 +64,21 @@ export default function EngineeringServices() {
     {
       title: "Project Planning",
       description:
-        "Our engineering team supports successful project execution through structured planning, scheduling, and performance monitoring.",
+        "Structured planning, scheduling, and monitoring for project success.",
       image: "/planning.png",
       items: [
-        "Project Organization Chart Preparation",
-        "Work Breakdown Structure (WBS) Development",
-        "Tentative Project Schedule Development",
-        "Planned Cost Flow Analysis",
-        "Planned S-Curve Generation",
-        "Project Progress Monitoring",
+        "Project Organization Chart",
+        "WBS Development",
+        "Schedule Development",
+        "Cost Flow Analysis",
+        "S-Curve Generation",
+        "Progress Monitoring",
       ],
     },
     {
       title: "Procurement Support",
       description:
-        "We assist project teams during procurement by delivering precise technical documentation and ensuring smooth vendor coordination.",
+        "Supporting procurement through technical documentation and vendor coordination.",
       image: "/Procurement.png",
       groups: [
         {
@@ -92,17 +92,17 @@ export default function EngineeringServices() {
         {
           heading: "Procurement Engineering",
           items: [
-            "Material Requisition (MR) Preparation",
+            "Material Requisition (MR)",
             "Vendor Offer Comparison",
-            "Purchase Order Technical Attachments",
+            "PO Technical Attachments",
           ],
         },
         {
           heading: "Material Management",
           items: [
-            "Material Take-Off (MTO) Verification",
-            "Vendor Document Register (VDR)",
-            "Inspection & Test Plan (ITP) Review",
+            "MTO Verification",
+            "VDR Management",
+            "ITP Review",
           ],
         },
       ],
@@ -112,7 +112,7 @@ export default function EngineeringServices() {
   return (
     <div className="bg-[#004373] text-white">
       <div className="max-w-7xl mx-auto py-10 px-6">
-        <h1 className="text-4xl font-bold mb-12 text-center tracking-wide">
+        <h1 className="text-4xl font-bold mb-12 text-center">
           Engineering Services
         </h1>
 
@@ -125,12 +125,11 @@ export default function EngineeringServices() {
               style={{
                 transform: `scale(${1 - index * 0.03})`,
                 zIndex: 20 + index,
-                opacity: 1 - index * 0.06,
               }}
             >
-              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[540px] transition-all duration-500">
+              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[540px]">
 
-                {/* CONTENT */}
+                {/* TEXT */}
                 <div className="relative z-10 max-w-[65%]">
                   <h2 className="text-2xl font-semibold mb-2">
                     {section.title}
@@ -144,34 +143,26 @@ export default function EngineeringServices() {
                   {section.items && (
                     <ul className="space-y-2 text-blue-100">
                       {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-3">
-                          <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
-                          {item}
-                        </li>
+                        <li key={i}>• {item}</li>
                       ))}
                     </ul>
                   )}
 
-                  {/* PROCUREMENT GROUPS */}
+                  {/* GROUP ITEMS (PROCUREMENT) */}
                   {section.groups &&
                     section.groups.map((group, i) => (
                       <div key={i} className="mt-4">
-                        <h3 className="font-semibold mb-1">
-                          {group.heading}
-                        </h3>
+                        <h3 className="font-semibold">{group.heading}</h3>
                         <ul className="space-y-2 text-blue-100">
                           {group.items.map((item, j) => (
-                            <li key={j} className="flex gap-3">
-                              <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
-                              {item}
-                            </li>
+                            <li key={j}>• {item}</li>
                           ))}
                         </ul>
                       </div>
                     ))}
                 </div>
 
-                {/* IMAGE (RIGHT BOTTOM CLEAR) */}
+                {/* IMAGE RIGHT BOTTOM */}
                 <div className="absolute bottom-0 right-0 w-[55%] h-[60%]">
                   <Image
                     src={section.image}
