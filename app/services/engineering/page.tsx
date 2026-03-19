@@ -121,13 +121,12 @@ export default function EngineeringServices() {
             
             <div
               key={index}
-              className="sticky top-10"
+              className="sticky top-10 w-full"
               style={{
-                transform: `scale(${1 - index * 0.03})`,
                 zIndex: 20 + index,
-              }}
+                    }}
             >
-              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[540px]">
+              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden h-[600px] md:h-[650px]">
 
                 {/* TEXT */}
                 <div className="relative z-10 max-w-[65%]">
