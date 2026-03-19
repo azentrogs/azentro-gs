@@ -90,7 +90,7 @@ Digital Transformation
 
 <div
 key={index}
-className="sticky md:top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[500px]"
+className="sticky top-8 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[500px]"
 >
 
 <h2 className="text-2xl font-semibold mb-2">

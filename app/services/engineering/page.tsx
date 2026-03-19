@@ -162,7 +162,7 @@ export default function EngineeringServices() {
                 </div>
 
                 {/* IMAGE RIGHT BOTTOM */}
-                <div className="absolute bottom-15 right-0 w-[55%] h-[60%]">
+                <div className="absolute bottom-20 right-0 w-[55%] h-[60%]">
                   <Image
                     src={section.image}
                     alt={section.title}
