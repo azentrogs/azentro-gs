@@ -126,21 +126,21 @@ export default function EngineeringServices() {
                 zIndex: 20 + index,
                     }}
             >
-              <div className="relative bg-[#287BAE] p-6 md:p-5 p-5 rounded-xl shadow-2xl overflow-hidden h-[580px] md:h-[520px]">
+              <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-[580px] md:h-[600px]">
                 
                 {/* TEXT */}
-                <div className="relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto pr-2 flex flex-col justify-between">
+                <div className="relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto md:overflow-y-auto pr-2">
                   <h2 className="text-2xl font-semibold mb-2">
                     {section.title}
                   </h2>
 
-                  <p className="text-blue-100 mb-4 leading-relaxed md:leading-loose">
+                  <p className="text-blue-100 mb-4">
                     {section.description}
                   </p>
 
                   {/* NORMAL ITEMS */}
                   {section.items && (
-                    <ul className="space-y-2 text-blue-100 leading-relaxed">
+                    <ul className="space-y-2 text-blue-100">
                       {section.items.map((item, i) => (
                         <li key={i}>• {item}</li>
                       ))}
