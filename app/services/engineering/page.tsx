@@ -127,24 +127,28 @@ export default function EngineeringServices() {
                     }}
             >
               <div className={`relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden ${
-  index === sections.length - 1
+  index === sections.length - 2
     ? "h-[680px] md:h-[600px]"
     : "h-[580px] md:h-[540px]"
 }`}>
                 
                 {/* TEXT */}
-                <div className="relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto md:overflow-y-auto pr-2">
+                <div className="scroll-area relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto md:overflow-y-auto pr-2"
+                style={{
+                 scrollbarWidth: "thin", // Firefox
+                   }}
+                  >
                   <h2 className="text-2xl font-semibold mb-2">
                     {section.title}
                   </h2>
 
-                  <p className="text-blue-100 mb-4">
+                  <p className="text-blue-100 mb-4 leading-relaxed md:leading-loose">
                     {section.description}
                   </p>
 
                   {/* NORMAL ITEMS */}
                   {section.items && (
-                    <ul className="space-y-2 text-blue-100">
+                    <ul className="space-y-2 text-blue-100 leading-relaxed">
                       {section.items.map((item, i) => (
                         <li key={i}>• {item}</li>
                       ))}
@@ -187,6 +191,21 @@ export default function EngineeringServices() {
           ))}
         </div>
       </div>
+          <style jsx>{`
+      .scroll-area::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      .scroll-area::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .scroll-area::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+      }
+    `}</style>
     </div>
+    
   );
 }
