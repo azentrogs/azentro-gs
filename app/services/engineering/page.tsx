@@ -126,10 +126,10 @@ export default function EngineeringServices() {
                 zIndex: 20 + index,
                     }}
             >
-              <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-auto md:h-[580px]">
+              <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-[580px] md:h-[580px]">
 
                 {/* TEXT */}
-                <div className="relative z-10 max-w-[65%]">
+                <div className="relative z-10 max-w-[65%] h-full overflow-y-auto pr-2">
                   <h2 className="text-2xl font-semibold mb-2">
                     {section.title}
                   </h2>
