@@ -65,7 +65,7 @@ export default function EngineeringServices() {
       title: "Project Planning",
       description:
         "Our engineering team supports successful project execution through structured planning, scheduling, and performance monitoring.",
-      image: "/planning.png",
+      image: "/services/planning.png",
       items: [
         "Project Organization Chart Preparation",
         "Work Breakdown Structure (WBS) Development",
@@ -79,7 +79,7 @@ export default function EngineeringServices() {
       title: "Procurement Support",
       description:
         "We assist project teams during procurement by delivering precise technical documentation and ensuring smooth vendor coordination.",
-      image: "/Procurement.png",
+      image: "/services/Procurement.png",
       groups: [
         {
           heading: "Vendor Documentation",
