@@ -187,20 +187,6 @@ export default function EngineeringServices() {
           ))}
         </div>
       </div>
-          <style jsx>{`
-      .scroll-area::-webkit-scrollbar {
-        width: 3px;
-      }
-
-      .scroll-area::-webkit-scrollbar-track {
-        background: transparent;
-      }
-
-      .scroll-area::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.4);
-        border-radius: 10px;
-      }
-    `}</style>
     </div>
     
   );
