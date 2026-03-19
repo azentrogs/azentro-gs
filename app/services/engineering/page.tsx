@@ -64,16 +64,48 @@ export default function EngineeringServices() {
     {
       title: "Project Planning",
       description:
-        "Our engineering team supports project planning including schedule development, cost analysis and project monitoring.",
-      image: "/services/project-planning.png",
-      items: [],
+        "Our engineering team supports successful project execution through structured planning, scheduling, and performance monitoring.",
+      image: "/planning.png",
+      items: [
+        "Project Organization Chart Preparation",
+        "Work Breakdown Structure (WBS) Development",
+        "Tentative Project Schedule Development",
+        "Planned Cost Flow Analysis",
+        "Planned S-Curve Generation",
+        "Project Progress Monitoring",
+      ],
     },
     {
       title: "Procurement Support",
       description:
-        "We assist procurement processes including technical requisitions, vendor evaluation and documentation review.",
-      image: "/services/procurement-support.png",
-      items: [],
+        "We assist project teams during procurement by delivering precise technical documentation and ensuring smooth vendor coordination.",
+      image: "/Procurement.png",
+      groups: [
+        {
+          heading: "Vendor Documentation",
+          items: [
+            "Technical Requisition Preparation",
+            "Vendor Data Review",
+            "Technical Bid Evaluation",
+          ],
+        },
+        {
+          heading: "Procurement Engineering",
+          items: [
+            "Material Requisition (MR) Preparation",
+            "Vendor Offer Comparison",
+            "Purchase Order Technical Attachments",
+          ],
+        },
+        {
+          heading: "Material Management",
+          items: [
+            "Material Take-Off (MTO) Verification",
+            "Vendor Document Register (VDR)",
+            "Inspection & Test Plan (ITP) Review",
+          ],
+        },
+      ],
     },
   ];
 
@@ -88,20 +120,21 @@ export default function EngineeringServices() {
           {sections.map((section, index) => (
             <div
               key={index}
-              className="relative sticky top-6 bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[520px]"
+              className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[520px]"
             >
-              {/* Content */}
-              <div className="relative z-10">
+              {/* CONTENT */}
+              <div className="relative z-10 max-w-[65%]">
                 <h2 className="text-2xl font-semibold mb-2">
                   {section.title}
                 </h2>
 
-                <p className="text-blue-100 text-base leading-relaxed mb-4">
+                <p className="text-blue-100 mb-4">
                   {section.description}
                 </p>
 
-                {section.items.length > 0 && (
-                  <ul className="grid grid-cols-1 gap-y-2 text-blue-100 text-[15px] md:text-[16px] leading-relaxed">
+                {/* NORMAL ITEMS */}
+                {section.items && (
+                  <ul className="space-y-2 text-blue-100">
                     {section.items.map((item, i) => (
                       <li key={i} className="flex gap-3">
                         <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
@@ -110,20 +143,41 @@ export default function EngineeringServices() {
                     ))}
                   </ul>
                 )}
+
+                {/* GROUPED ITEMS (PROCUREMENT) */}
+                {section.groups &&
+                  section.groups.map((group, i) => (
+                    <div key={i} className="mt-4">
+                      <h3 className="font-semibold mb-1">
+                        {group.heading}
+                      </h3>
+                      <ul className="space-y-2 text-blue-100">
+                        {group.items.map((item, j) => (
+                          <li key={j} className="flex gap-3">
+                            <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
               </div>
 
-              {/* Bottom Image */}
-              <div className="absolute bottom-0 left-0 w-full h-[220px] md:h-[260px]">
+              {/* IMAGE RIGHT BOTTOM */}
+              <div className="absolute bottom-0 right-0 w-[55%] h-[60%]">
                 <Image
                   src={section.image}
                   alt={section.title}
                   fill
-                  className="object-cover opacity-80"
+                  className="object-cover"
                 />
-
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#287BAE] via-[#287BAE]/90 to-transparent"></div>
               </div>
+
+              {/* LEFT GRADIENT (TEXT CLEAR) */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#287BAE] via-[#287BAE]/90 to-transparent"></div>
+
+              {/* TOP FADE */}
+              <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-[#287BAE] via-[#287BAE]/80 to-transparent"></div>
             </div>
           ))}
         </div>
