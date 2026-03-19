@@ -126,7 +126,7 @@ export default function EngineeringServices() {
                 zIndex: 20 + index,
                     }}
             >
-              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden h-[600px] md:h-[650px]">
+              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden h-[540px] md:h-[600px]">
 
                 {/* TEXT */}
                 <div className="relative z-10 max-w-[65%]">
