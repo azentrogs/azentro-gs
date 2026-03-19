@@ -46,7 +46,10 @@ The Azentro Way
 What We Engineer
 </span>
 
-<div className="absolute hidden group-hover:block bg-[#004373] text-white mt-3 rounded-lg shadow-xl w-56">
+{/* Invisible bridge to prevent gap issue */}
+  <div className="absolute left-0 top-full w-full h-3"></div>
+
+  <div className="absolute left-0 top-full bg-[#004373] text-white rounded-lg shadow-xl w-56 hidden group-hover:block">
 
 <Link href="/services/strategy" className="block px-4 py-3 hover:bg-[#0a507f]">
 Business Strategy
