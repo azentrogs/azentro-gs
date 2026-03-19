@@ -126,7 +126,11 @@ export default function EngineeringServices() {
                 zIndex: 20 + index,
                     }}
             >
-              <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-[580px] md:h-[540px]">
+              <div className={`relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden ${
+  index === sections.length - 2
+    ? "h-[680px] md:h-[600px]"
+    : "h-[580px] md:h-[540px]"
+}`}>
                 
                 {/* TEXT */}
                 <div className="scroll-area relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto md:overflow-y-auto pr-2">
