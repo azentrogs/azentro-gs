@@ -121,7 +121,7 @@ export default function EngineeringServices() {
             
             <div
               key={index}
-              className="sticky md:top-10 w-full"
+              className="sticky top-0 md:top-10 w-full"
               style={{
                 zIndex: 20 + index,
                     }}
