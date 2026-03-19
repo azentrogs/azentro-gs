@@ -133,11 +133,7 @@ export default function EngineeringServices() {
 }`}>
                 
                 {/* TEXT */}
-                <div className="scroll-area relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto md:overflow-y-auto pr-2"
-                style={{
-                 scrollbarWidth: "thin", // Firefox
-                   }}
-                  >
+                <div className="scroll-area relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto md:overflow-y-auto pr-2">
                   <h2 className="text-2xl font-semibold mb-2">
                     {section.title}
                   </h2>
