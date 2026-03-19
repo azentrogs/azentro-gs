@@ -65,7 +65,7 @@ export default function EngineeringServices() {
       title: "Project Planning",
       description:
         "Structured planning, scheduling, and monitoring for project success.",
-      image: "/planning.png",
+      image: "/services/planning.png",
       items: [
         "Project Organization Chart",
         "WBS Development",
@@ -79,7 +79,7 @@ export default function EngineeringServices() {
       title: "Procurement Support",
       description:
         "Supporting procurement through technical documentation and vendor coordination.",
-      image: "/Procurement.png",
+      image: "/services/Procurement.png",
       groups: [
         {
           heading: "Vendor Documentation",
@@ -126,7 +126,7 @@ export default function EngineeringServices() {
                 zIndex: 20 + index,
                     }}
             >
-              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden h-[540px] md:h-[600px]">
+              <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-auto md:h-[580px]">
 
                 {/* TEXT */}
                 <div className="relative z-10 max-w-[65%]">
