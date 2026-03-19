@@ -65,7 +65,7 @@ export default function EngineeringServices() {
       title: "Project Planning",
       description:
         "Our engineering team supports successful project execution through structured planning, scheduling, and performance monitoring.",
-      image: "/services/planning.png",
+      image: "/planning.png",
       items: [
         "Project Organization Chart Preparation",
         "Work Breakdown Structure (WBS) Development",
@@ -79,7 +79,7 @@ export default function EngineeringServices() {
       title: "Procurement Support",
       description:
         "We assist project teams during procurement by delivering precise technical documentation and ensuring smooth vendor coordination.",
-      image: "/services/Procurement.png",
+      image: "/Procurement.png",
       groups: [
         {
           heading: "Vendor Documentation",
@@ -111,74 +111,85 @@ export default function EngineeringServices() {
 
   return (
     <div className="bg-[#004373] text-white">
-      <div className="max-w-7xl mx-auto py-6 px-6">
-        <h1 className="text-4xl font-bold mb-8 text-center tracking-wide">
+      <div className="max-w-7xl mx-auto py-10 px-6">
+        <h1 className="text-4xl font-bold mb-12 text-center tracking-wide">
           Engineering Services
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-16">
           {sections.map((section, index) => (
+            
             <div
               key={index}
-              className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[520px]"
+              className="sticky top-10"
+              style={{
+                transform: `scale(${1 - index * 0.03})`,
+                zIndex: 20 + index,
+                opacity: 1 - index * 0.06,
+              }}
             >
-              {/* CONTENT */}
-              <div className="relative z-10 max-w-[65%]">
-                <h2 className="text-2xl font-semibold mb-2">
-                  {section.title}
-                </h2>
+              <div className="relative bg-[#287BAE] p-6 rounded-xl shadow-2xl overflow-hidden min-h-[540px] transition-all duration-500">
 
-                <p className="text-blue-100 mb-4">
-                  {section.description}
-                </p>
+                {/* CONTENT */}
+                <div className="relative z-10 max-w-[65%]">
+                  <h2 className="text-2xl font-semibold mb-2">
+                    {section.title}
+                  </h2>
 
-                {/* NORMAL ITEMS */}
-                {section.items && (
-                  <ul className="space-y-2 text-blue-100">
-                    {section.items.map((item, i) => (
-                      <li key={i} className="flex gap-3">
-                        <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
-                        {item}
-                      </li>
+                  <p className="text-blue-100 mb-4">
+                    {section.description}
+                  </p>
+
+                  {/* NORMAL ITEMS */}
+                  {section.items && (
+                    <ul className="space-y-2 text-blue-100">
+                      {section.items.map((item, i) => (
+                        <li key={i} className="flex gap-3">
+                          <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* PROCUREMENT GROUPS */}
+                  {section.groups &&
+                    section.groups.map((group, i) => (
+                      <div key={i} className="mt-4">
+                        <h3 className="font-semibold mb-1">
+                          {group.heading}
+                        </h3>
+                        <ul className="space-y-2 text-blue-100">
+                          {group.items.map((item, j) => (
+                            <li key={j} className="flex gap-3">
+                              <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ))}
-                  </ul>
-                )}
+                </div>
 
-                {/* GROUPED ITEMS (PROCUREMENT) */}
-                {section.groups &&
-                  section.groups.map((group, i) => (
-                    <div key={i} className="mt-4">
-                      <h3 className="font-semibold mb-1">
-                        {group.heading}
-                      </h3>
-                      <ul className="space-y-2 text-blue-100">
-                        {group.items.map((item, j) => (
-                          <li key={j} className="flex gap-3">
-                            <span className="w-2 h-2 bg-blue-300 rounded-full mt-2"></span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                {/* IMAGE (RIGHT BOTTOM CLEAR) */}
+                <div className="absolute bottom-0 right-0 w-[55%] h-[60%]">
+                  <Image
+                    src={section.image}
+                    alt={section.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* LEFT GRADIENT */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#287BAE] via-[#287BAE]/90 to-transparent"></div>
+
+                {/* TOP FADE */}
+                <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-[#287BAE] via-[#287BAE]/80 to-transparent"></div>
+
               </div>
-
-              {/* IMAGE RIGHT BOTTOM */}
-              <div className="absolute bottom-0 right-0 w-[55%] h-[60%]">
-                <Image
-                  src={section.image}
-                  alt={section.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              {/* LEFT GRADIENT (TEXT CLEAR) */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#287BAE] via-[#287BAE]/90 to-transparent"></div>
-
-              {/* TOP FADE */}
-              <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-[#287BAE] via-[#287BAE]/80 to-transparent"></div>
             </div>
+
           ))}
         </div>
       </div>
