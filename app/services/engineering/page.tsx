@@ -120,66 +120,62 @@ export default function EngineeringServices() {
           {sections.map((section, index) => (
             
             <div
-              key={index}
-              className="md:sticky md:top-10 w-full"
-              style={{
-                zIndex: 20 + index,
-                    }}
-            >
-              <div className="relative bg-[#287BAE] p-6 md:p-6 p-5 rounded-xl shadow-2xl overflow-hidden h-[580px] md:h-[600px]">
+  key={index}
+  className="md:sticky md:top-10"
+  style={{ zIndex: 20 + index }}
+>
+  <div className="relative bg-[#287BAE] p-5 md:p-6 rounded-xl shadow-2xl overflow-hidden h-auto md:h-[580px]">
 
-                {/* TEXT */}
-                <div className="relative z-10 max-w-[70%] md:max-w-[65%] h-full overflow-y-auto pr-2">
-                  <h2 className="text-2xl font-semibold mb-2">
-                    {section.title}
-                  </h2>
+    {/* CONTENT */}
+    <div className="relative z-10 max-w-full md:max-w-[65%] md:h-full md:overflow-y-auto pr-2">
+      <h2 className="text-2xl font-semibold mb-2">
+        {section.title}
+      </h2>
 
-                  <p className="text-blue-100 mb-4">
-                    {section.description}
-                  </p>
+      <p className="text-blue-100 mb-4">
+        {section.description}
+      </p>
 
-                  {/* NORMAL ITEMS */}
-                  {section.items && (
-                    <ul className="space-y-2 text-blue-100">
-                      {section.items.map((item, i) => (
-                        <li key={i}>• {item}</li>
-                      ))}
-                    </ul>
-                  )}
+      {/* NORMAL ITEMS */}
+      {section.items && (
+        <ul className="space-y-2 text-blue-100">
+          {section.items.map((item, i) => (
+            <li key={i}>• {item}</li>
+          ))}
+        </ul>
+      )}
 
-                  {/* GROUP ITEMS (PROCUREMENT) */}
-                  {section.groups &&
-                    section.groups.map((group, i) => (
-                      <div key={i} className="mt-4">
-                        <h3 className="font-semibold">{group.heading}</h3>
-                        <ul className="space-y-2 text-blue-100">
-                          {group.items.map((item, j) => (
-                            <li key={j}>• {item}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                </div>
+      {/* PROCUREMENT GROUPS */}
+      {section.groups &&
+        section.groups.map((group, i) => (
+          <div key={i} className="mt-4">
+            <h3 className="font-semibold">{group.heading}</h3>
+            <ul className="space-y-2 text-blue-100">
+              {group.items.map((item, j) => (
+                <li key={j}>• {item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+    </div>
 
-                {/* IMAGE RIGHT BOTTOM */}
-                <div className="absolute bottom-15 right-0 w-[55%] h-[60%]">
-                  <Image
-                    src={section.image}
-                    alt={section.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+    {/* IMAGE - MOBILE BELOW CONTENT */}
+    <div className="relative mt-6 w-full h-[200px] md:absolute md:bottom-0 md:right-0 md:w-[55%] md:h-[60%]">
+      <Image
+        src={section.image}
+        alt={section.title}
+        fill
+        className="object-cover rounded-lg md:rounded-none"
+      />
+    </div>
 
-                {/* LEFT GRADIENT */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#287BAE] via-[#287BAE]/90 to-transparent"></div>
+    {/* GRADIENT ONLY FOR DESKTOP */}
+    <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-[#287BAE] via-[#287BAE]/90 to-transparent"></div>
 
-                {/* TOP FADE */}
-                <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-[#287BAE] via-[#287BAE]/80 to-transparent"></div>
+    <div className="hidden md:block absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-[#287BAE] via-[#287BAE]/80 to-transparent"></div>
 
-              </div>
-            </div>
-
+  </div>
+</div>
           ))}
         </div>
       </div>
