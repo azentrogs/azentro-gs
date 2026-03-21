@@ -123,11 +123,10 @@ export default function Hero() {
 
 <section id="about" className="bg-gray-100 py-14 md:py-20">
 
-  <div className="max-w-6xl mx-auto px-6 space-y-10">
-
-    {/* TITLE */}
+  <div className="max-w-7xl mx-auto px-6 text-center space-y-10">
+           
     <div className="max-w-3xl">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+      <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-2">
         The Azentro Way
       </h2>
       <div className="w-16 h-1 bg-blue-600 mb-4 rounded"></div>
@@ -148,7 +147,7 @@ export default function Hero() {
           src="/images/vision.png"
           alt="Vision"
           width={250}
-          height={200}
+          height={150}
           className="rounded-xl shadow-lg w-full max-w-md" 
         />
       </div>
@@ -191,7 +190,7 @@ export default function Hero() {
           src="/images/mission-new.png"
           alt="Mission"
           width={250}
-          height={200}
+          height={150}
           className="rounded-xl shadow-lg w-full max-w-md"
         />
       </div>
