@@ -125,11 +125,11 @@ export default function Hero() {
 
   <div className="max-w-7xl mx-auto px-6 text-center space-y-10">
            
-    <div className="max-w-3xl">
+    <div className="max-w-3xl mx-auto text-center">
       <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-2">
         The Azentro Way
       </h2>
-      <div className="w-16 h-1 bg-blue-600 mb-4 rounded"></div>
+      <div className="w-16 h-1 bg-blue-600 mx-auto mb-4 rounded"></div>
 
       <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
         Engineering intelligence that powers modern enterprises. We combine 
@@ -139,7 +139,7 @@ export default function Hero() {
     </div>
 
     {/* VISION */}
-    <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+    <div className="grid md:grid-cols-2 gap-6 md:gap-8">
 
       {/* IMAGE */}
       <div>
