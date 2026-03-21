@@ -142,7 +142,7 @@ solutions that help organizations navigate complexity and build resilient digita
 
 
 {/* VISION */}
-<div className="grid md:grid-cols-[1.8fr_0.4fr] gap-10 items-center">
+<div className="grid md:grid-cols-[1.8fr_0.5fr] gap-10 items-center">
 
 <div>
 
@@ -163,8 +163,8 @@ complex challenges through modern engineering solutions.
 <Image
 src="/images/vision.png"
 alt="Vision"
-width={150}
-height={100}
+width={200}
+height={150}
 className="object-contain"
 />
 
@@ -174,15 +174,15 @@ className="object-contain"
 
 
 {/* MISSION */}
-<div className="grid md:grid-cols-[0.4fr_1.8fr] gap-10 items-center">
+<div className="grid md:grid-cols-[0.5fr_1.8fr] gap-10 items-center">
 
 <div className="flex justify-center md:order-1 order-2">
 
 <Image
 src="/images/mission-new.png"
 alt="Mission"
-width={150}
-height={100}
+width={200}
+height={150}
 className="object-contain"
 />
 
