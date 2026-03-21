@@ -121,7 +121,7 @@ export default function Hero() {
     </section>
 {/* SECTION — AZENTRO WAY */}
 
-<section className="bg-gray-100 py-24">
+<section id="about" className="bg-gray-100 py-16 md:py-20">
 
   <div className="max-w-6xl mx-auto px-6 space-y-20">
 
@@ -140,16 +140,16 @@ export default function Hero() {
     </div>
 
     {/* VISION */}
-    <div className="grid md:grid-cols-2 gap-12 items-center">
+    <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
 
       {/* IMAGE */}
       <div>
         <Image
           src="/images/vision.png"
           alt="Vision"
-          width={500}
-          height={300}
-          className="rounded-xl shadow-lg"
+          width={250}
+          height={200}
+          className="rounded-xl shadow-lg w-full max-w-md" 
         />
       </div>
 
@@ -170,7 +170,7 @@ export default function Hero() {
     </div>
 
     {/* MISSION */}
-    <div className="grid md:grid-cols-2 gap-12 items-center">
+    <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
 
       {/* TEXT (LEFT) */}
       <div className="order-2 md:order-1">
@@ -190,9 +190,9 @@ export default function Hero() {
         <Image
           src="/images/mission-new.png"
           alt="Mission"
-          width={500}
-          height={300}
-          className="rounded-xl shadow-lg"
+          width={250}
+          height={200}
+          className="rounded-xl shadow-lg w-full max-w-md"
         />
       </div>
 
