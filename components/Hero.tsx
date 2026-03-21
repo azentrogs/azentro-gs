@@ -123,14 +123,14 @@ export default function Hero() {
 
 <section id="about" className="bg-gray-100 py-14 md:py-20">
 
-  <div className="max-w-6xl mx-auto px-6 space-y-16">
+  <div className="max-w-6xl mx-auto px-6 space-y-10">
 
     {/* TITLE */}
     <div className="max-w-3xl">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
         The Azentro Way
       </h2>
-      <div className="w-16 h-1 bg-blue-600 mb-6 rounded"></div>
+      <div className="w-16 h-1 bg-blue-600 mb-4 rounded"></div>
 
       <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
         Engineering intelligence that powers modern enterprises. We combine 
@@ -140,7 +140,7 @@ export default function Hero() {
     </div>
 
     {/* VISION */}
-    <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+    <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
 
       {/* IMAGE */}
       <div>
@@ -155,10 +155,10 @@ export default function Hero() {
 
       {/* TEXT */}
       <div>
-        <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+        <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
           Our Vision
         </h3>
-
+         <div className="w-16 h-1 bg-blue-600 mb-4 rounded"></div>
         <p className="text-gray-600 text-base md:text-lg leading-relaxed">
           To become a trusted global partner for engineering, technology, and 
           data-driven innovation, enabling organizations to build intelligent 
@@ -170,7 +170,7 @@ export default function Hero() {
     </div>
 
     {/* MISSION */}
-    <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+    <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
 
       {/* TEXT (LEFT) */}
       <div className="order-2 md:order-1">
