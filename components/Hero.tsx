@@ -121,90 +121,90 @@ export default function Hero() {
     </section>
     {/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="bg-gray-200 py-14">
+<section id="about" className="bg-gray-100 py-20">
 
-<div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-6xl mx-auto px-6">
 
-{/* SECTION TITLE */}
-<div className="text-center max-w-3xl mx-auto mb-10">
+    {/* SECTION TITLE */}
+    <div className="text-center max-w-3xl mx-auto mb-16">
 
-<h2 className="text-3xl md:text-4xl font-semibold mb-4">
-The Azentro Way
-</h2>
+      <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+        The Azentro Way
+      </h2>
 
-<p className="text-gray-600 text-lg leading-relaxed">
-Engineering intelligence that powers modern enterprises. At Azentro, we combine 
-engineering expertise, digital innovation, and data intelligence to design scalable 
-solutions that help organizations navigate complexity and build resilient digital futures.
-</p>
+      {/* Accent Line */}
+      <div className="w-16 h-1 bg-blue-500 mx-auto mb-6 rounded"></div>
 
-</div>
+      <p className="text-gray-500 text-lg md:text-xl leading-relaxed">
+        Engineering intelligence that powers modern enterprises. At Azentro, we combine 
+        engineering expertise, digital innovation, and data intelligence to design scalable 
+        solutions that help organizations navigate complexity and build resilient digital futures.
+      </p>
 
+    </div>
 
-{/* VISION */}
-<div className="grid md:grid-cols-[1.8fr_0.5fr] gap-10 items-center">
+    {/* VISION & MISSION CARDS */}
+    <div className="grid md:grid-cols-2 gap-10">
 
-<div>
+      {/* VISION CARD */}
+      <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
 
-<h3 className="text-2xl font-semibold mb-4">
-Azentro's Vision
-</h3>
+        <div className="flex items-start gap-5">
+          
+          <Image
+            src="/images/vision.png"
+            alt="Vision"
+            width={60}
+            height={60}
+            className="object-contain"
+          />
 
-<p className="text-gray-600 text-lg leading-relaxed">
-To become a trusted global partner for engineering, technology, and data-driven 
-innovation, enabling organizations to build intelligent digital futures and solve 
-complex challenges through modern engineering solutions.
-</p>
+          <div>
+            <h3 className="text-2xl font-semibold text-blue-600 mb-3">
+              Our Vision
+            </h3>
 
-</div>
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+              To become a trusted global partner for engineering, technology, and data-driven 
+              innovation, enabling organizations to build intelligent digital futures and solve 
+              complex challenges through modern engineering solutions.
+            </p>
+          </div>
 
-<div className="flex justify-center">
+        </div>
+      </div>
 
-<Image
-src="/images/vision.png"
-alt="Vision"
-width={200}
-height={150}
-className="object-contain"
-/>
+      {/* MISSION CARD */}
+      <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
 
-</div>
+        <div className="flex items-start gap-5">
+          
+          <Image
+            src="/images/mission-new.png"
+            alt="Mission"
+            width={60}
+            height={60}
+            className="object-contain"
+          />
 
-</div>
+          <div>
+            <h3 className="text-2xl font-semibold text-blue-600 mb-3">
+              Our Mission
+            </h3>
 
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+              Our mission is to deliver scalable engineering, technology, and data intelligence 
+              solutions that empower organizations to innovate, transform operations, and create 
+              lasting value in a rapidly evolving digital world.
+            </p>
+          </div>
 
-{/* MISSION */}
-<div className="grid md:grid-cols-[0.5fr_1.8fr] gap-10 items-center">
+        </div>
+      </div>
 
-<div className="flex justify-center md:order-1 order-2">
+    </div>
 
-<Image
-src="/images/mission-new.png"
-alt="Mission"
-width={200}
-height={150}
-className="object-contain"
-/>
-
-</div>
-
-<div className="md:order-2 order-1">
-
-<h3 className="text-2xl font-semibold mb-4">
-Azentro's Mission
-</h3>
-
-<p className="text-gray-600 text-lg leading-relaxed">
-Our mission is to deliver scalable engineering, technology, and data intelligence 
-solutions that empower organizations to innovate, transform operations, and create 
-lasting value in a rapidly evolving digital world.
-</p>
-
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </section>
      {/* SECTION 3 — SERVICES OVERVIEW */}
