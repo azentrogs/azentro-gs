@@ -161,7 +161,7 @@ complex challenges through modern engineering solutions.
 <div className="flex justify-center">
 
 <Image
-src="/images/vision-outline.png"
+src="/images/vision.png"
 alt="Vision"
 width={250}
 height={250}
@@ -179,7 +179,7 @@ className="object-contain"
 <div className="flex justify-center md:order-1 order-2">
 
 <Image
-src="/images/mission.png"
+src="/images/mission-new.png"
 alt="Mission"
 width={250}
 height={250}
