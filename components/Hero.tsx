@@ -119,23 +119,22 @@ export default function Hero() {
       </div>
 
     </section>
-    {/* SECTION 2 — THE AZENTRO WAY */}
+{/* SECTION 2 — THE AZENTRO WAY */}
 
-<section id="about" className="bg-gray-100 py-20">
+<section id="about" className="bg-gray-100 py-24">
 
   <div className="max-w-6xl mx-auto px-6">
 
-    {/* SECTION TITLE */}
-    <div className="text-center max-w-3xl mx-auto mb-16">
+    {/* TITLE */}
+    <div className="text-center max-w-3xl mx-auto mb-20">
 
-      <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
         The Azentro Way
       </h2>
 
-      {/* Accent Line */}
-      <div className="w-16 h-1 bg-blue-500 mx-auto mb-6 rounded"></div>
+      <div className="w-16 h-1 bg-blue-600 mx-auto mb-6 rounded"></div>
 
-      <p className="text-gray-500 text-lg md:text-xl leading-relaxed">
+      <p className="text-gray-500 text-lg md:text-xl leading-relaxed font-light">
         Engineering intelligence that powers modern enterprises. At Azentro, we combine 
         engineering expertise, digital innovation, and data intelligence to design scalable 
         solutions that help organizations navigate complexity and build resilient digital futures.
@@ -143,63 +142,67 @@ export default function Hero() {
 
     </div>
 
-    {/* VISION & MISSION CARDS */}
-    <div className="grid md:grid-cols-2 gap-10">
+    {/* CARDS */}
+    <div className="grid md:grid-cols-2 gap-12">
 
-      {/* VISION CARD */}
-      <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+      {/* VISION */}
+      <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-10 text-center">
 
-        <div className="flex items-start gap-5">
-          
-          <Image
-            src="/images/vision.png"
-            alt="Vision"
-            width={60}
-            height={60}
-            className="object-contain"
-          />
-
-          <div>
-            <h3 className="text-2xl font-semibold text-blue-600 mb-3">
-              Our Vision
-            </h3>
-
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              To become a trusted global partner for engineering, technology, and data-driven 
-              innovation, enabling organizations to build intelligent digital futures and solve 
-              complex challenges through modern engineering solutions.
-            </p>
+        {/* ICON */}
+        <div className="flex justify-center mb-6">
+          <div className="bg-blue-50 p-4 rounded-xl">
+            <Image
+              src="/images/vision.png"
+              alt="Vision"
+              width={50}
+              height={50}
+              className="object-contain"
+            />
           </div>
-
         </div>
+
+        {/* TITLE */}
+        <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          Our Vision
+        </h3>
+
+        {/* TEXT */}
+        <p className="text-gray-600 text-base md:text-lg leading-relaxed font-normal">
+          To become a trusted global partner for engineering, technology, and data-driven 
+          innovation, enabling organizations to build intelligent digital futures and solve 
+          complex challenges through modern engineering solutions.
+        </p>
+
       </div>
 
-      {/* MISSION CARD */}
-      <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+      {/* MISSION */}
+      <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-10 text-center">
 
-        <div className="flex items-start gap-5">
-          
-          <Image
-            src="/images/mission-new.png"
-            alt="Mission"
-            width={60}
-            height={60}
-            className="object-contain"
-          />
-
-          <div>
-            <h3 className="text-2xl font-semibold text-blue-600 mb-3">
-              Our Mission
-            </h3>
-
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              Our mission is to deliver scalable engineering, technology, and data intelligence 
-              solutions that empower organizations to innovate, transform operations, and create 
-              lasting value in a rapidly evolving digital world.
-            </p>
+        {/* ICON */}
+        <div className="flex justify-center mb-6">
+          <div className="bg-blue-50 p-4 rounded-xl">
+            <Image
+              src="/images/mission-new.png"
+              alt="Mission"
+              width={50}
+              height={50}
+              className="object-contain"
+            />
           </div>
-
         </div>
+
+        {/* TITLE */}
+        <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          Our Mission
+        </h3>
+
+        {/* TEXT */}
+        <p className="text-gray-600 text-base md:text-lg leading-relaxed font-normal">
+          Our mission is to deliver scalable engineering, technology, and data intelligence 
+          solutions that empower organizations to innovate, transform operations, and create 
+          lasting value in a rapidly evolving digital world.
+        </p>
+
       </div>
 
     </div>
