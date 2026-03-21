@@ -119,90 +119,81 @@ export default function Hero() {
       </div>
 
     </section>
-{/* SECTION 2 — THE AZENTRO WAY */}
+{/* SECTION — AZENTRO WAY */}
 
-<section id="about" className="bg-gray-100 py-24">
+<section className="bg-gray-100 py-24">
 
-  <div className="max-w-6xl mx-auto px-6">
+  <div className="max-w-6xl mx-auto px-6 space-y-20">
 
     {/* TITLE */}
-    <div className="text-center max-w-3xl mx-auto mb-20">
-
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+    <div className="max-w-3xl">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
         The Azentro Way
       </h2>
+      <div className="w-16 h-1 bg-blue-600 mb-6 rounded"></div>
 
-      <div className="w-16 h-1 bg-blue-600 mx-auto mb-6 rounded"></div>
-
-      <p className="text-gray-500 text-lg md:text-xl leading-relaxed font-light">
-        Engineering intelligence that powers modern enterprises. At Azentro, we combine 
-        engineering expertise, digital innovation, and data intelligence to design scalable 
-        solutions that help organizations navigate complexity and build resilient digital futures.
+      <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+        Engineering intelligence that powers modern enterprises. We combine 
+        engineering expertise, digital innovation, and data intelligence to 
+        design scalable solutions.
       </p>
-
     </div>
 
-    {/* CARDS */}
-    <div className="grid md:grid-cols-2 gap-12">
+    {/* VISION */}
+    <div className="grid md:grid-cols-2 gap-12 items-center">
 
-      {/* VISION */}
-      <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-10 text-center">
+      {/* IMAGE */}
+      <div>
+        <Image
+          src="/images/vision.png"
+          alt="Vision"
+          width={500}
+          height={300}
+          className="rounded-xl shadow-lg"
+        />
+      </div>
 
-        {/* ICON */}
-        <div className="flex justify-center mb-6">
-          <div className="bg-blue-50 p-4 rounded-xl">
-            <Image
-              src="/images/vision.png"
-              alt="Vision"
-              width={50}
-              height={50}
-              className="object-contain"
-            />
-          </div>
-        </div>
-
-        {/* TITLE */}
+      {/* TEXT */}
+      <div>
         <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
           Our Vision
         </h3>
 
-        {/* TEXT */}
-        <p className="text-gray-600 text-base md:text-lg leading-relaxed font-normal">
-          To become a trusted global partner for engineering, technology, and data-driven 
-          innovation, enabling organizations to build intelligent digital futures and solve 
-          complex challenges through modern engineering solutions.
+        <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+          To become a trusted global partner for engineering, technology, and 
+          data-driven innovation, enabling organizations to build intelligent 
+          digital futures and solve complex challenges through modern engineering 
+          solutions.
         </p>
-
       </div>
 
-      {/* MISSION */}
-      <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-10 text-center">
+    </div>
 
-        {/* ICON */}
-        <div className="flex justify-center mb-6">
-          <div className="bg-blue-50 p-4 rounded-xl">
-            <Image
-              src="/images/mission-new.png"
-              alt="Mission"
-              width={50}
-              height={50}
-              className="object-contain"
-            />
-          </div>
-        </div>
+    {/* MISSION */}
+    <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        {/* TITLE */}
+      {/* TEXT (LEFT) */}
+      <div className="order-2 md:order-1">
         <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
           Our Mission
         </h3>
 
-        {/* TEXT */}
-        <p className="text-gray-600 text-base md:text-lg leading-relaxed font-normal">
-          Our mission is to deliver scalable engineering, technology, and data intelligence 
-          solutions that empower organizations to innovate, transform operations, and create 
-          lasting value in a rapidly evolving digital world.
+        <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+          Our mission is to deliver scalable engineering, technology, and data 
+          intelligence solutions that empower organizations to innovate, transform 
+          operations, and create lasting value in a rapidly evolving digital world.
         </p>
+      </div>
 
+      {/* IMAGE (RIGHT) */}
+      <div className="order-1 md:order-2">
+        <Image
+          src="/images/mission-new.png"
+          alt="Mission"
+          width={500}
+          height={300}
+          className="rounded-xl shadow-lg"
+        />
       </div>
 
     </div>
